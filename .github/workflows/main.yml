@@ -28,4 +28,4 @@ jobs:
       run: npm install -g surge gh-pages
       
     - name: Deploying on gh-pages
-      run: gh-pages ./build
+      run: gh-pages -d ./build --git git
