@@ -25,4 +25,4 @@ jobs:
       run: npm run build
       
     - name: Deploying on gh-pages
-      run: npm run deploy
+      run: gh-pages -d ./build
