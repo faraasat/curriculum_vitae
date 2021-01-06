@@ -1,9 +1,12 @@
 import "./App.css";
+import { Header } from "./listing";
 
 function App() {
   return (
     <div>
-      <h1>Hello World!!</h1>
+      <div className='cv-app-header-alignment'>
+        <Header />
+      </div>
     </div>
   );
 }

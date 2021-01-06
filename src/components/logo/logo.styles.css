@@ -1,0 +1,8 @@
+.cv-header__image-background {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+}

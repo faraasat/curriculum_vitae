@@ -1,0 +1,7 @@
+.cv-app-header-alignment {
+  box-sizing: border-box;
+  display: inline-block;
+  position: fixed;
+  max-width: 100px;
+  min-width: 100px;
+}
