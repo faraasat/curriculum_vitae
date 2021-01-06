@@ -7,6 +7,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-right: 3.5px solid transparent;
+  border-image: linear-gradient(
+    150deg,
+    #a3ff6e,
+    #f0ff6e,
+    #ffd86e,
+    #ffa36e,
+    #b7f8db,
+    #50a7c2,
+    #00aeff,
+    #f184ff,
+    #ff70e7,
+    #ff9ebb,
+    #9effdf,
+    #9effab
+  );
+  border-image-slice: 1;
 }
 
 .cv-header__image > * {
@@ -107,6 +124,7 @@
 #cv-header__social-icons__facebook > * {
   color: rgb(0, 47, 255) !important;
   padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 #cv-header__social-icons__facebook:hover > * {
@@ -122,6 +140,7 @@
 #cv-header__social-icons__linked-in > * {
   color: rgb(22, 3, 185) !important;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 #cv-header__social-icons__linked-in:hover > * {
@@ -137,6 +156,7 @@
 #cv-header__social-icons__instagram > * {
   color: rgb(255, 0, 242) !important;
   padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 #cv-header__social-icons__instagram:hover > * {
@@ -152,6 +172,7 @@
 #cv-header__social-icons__github > * {
   color: rgb(19, 19, 19) !important;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 #cv-header__social-icons__github:hover > * {
@@ -167,6 +188,7 @@
 #cv-header__social-icons__telegram > * {
   color: rgb(0, 183, 255) !important;
   padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 #cv-header__social-icons__telegram:hover > * {
@@ -182,6 +204,7 @@
 #cv-header__social-icons__whatsApp > * {
   color: rgb(89, 240, 2) !important;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 #cv-header__social-icons__whatsApp:hover > * {
