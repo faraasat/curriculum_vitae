@@ -24,5 +24,8 @@ jobs:
     - name: Creating Build
       run: npm run build
       
+    - name: Installing gh-pages
+      run: npm install -g surge gh-pages
+      
     - name: Deploying on gh-pages
       run: gh-pages -d ./build
