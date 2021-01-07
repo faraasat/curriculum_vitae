@@ -35,3 +35,11 @@ export interface ITooltipComponent extends IChildren {
     | FunctionComponent<TransitionProps>
     | undefined;
 }
+
+export interface ICustomButton {
+  onClick?: (event?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  txt1: string;
+  txt2: string;
+  className?: string;
+  Ico?: any;
+}

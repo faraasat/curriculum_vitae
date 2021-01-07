@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Polya;
+  src: url(./assets/Polya.otf);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -8,6 +13,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 code {
