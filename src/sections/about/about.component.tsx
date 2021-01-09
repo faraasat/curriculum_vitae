@@ -7,14 +7,19 @@ import "react-typed/dist/animatedCursor.css";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import SendIcon from "@material-ui/icons/Send";
 import GetAppIcon from "@material-ui/icons/GetApp";
+import { TypographyStyleTextPattern } from "../../components/typography/typography.component";
+import {
+  LineCardLeftComponent,
+  LineCardRightComponent,
+} from "../../components/line-cards/line-cards.component";
 
 export default function AboutSection() {
   return (
-    <div>
-      <div className="about-section-particle-alignment">
+    <section>
+      <section className="about-section-particle-alignment">
         <ParticlesComponent />
-      </div>
-      <div className="about-section-background">
+      </section>
+      <section className="about-section-background">
         <div className="about-section-background__container">
           <div className="about-section-background__items">
             <div className="about-section-background__items-typography">
@@ -73,7 +78,81 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section className="about-section-education__alignment">
+        <div className="about-section-education__background">
+          <div className="about-section-education__background-image" />
+        </div>
+        <div className="about-section-education__content-background">
+          <div className="about-section-education__container">
+            <div className="about-section-education__heading">
+              <TypographyStyleTextPattern
+                text={[
+                  { 1: "E", 2: "d", 3: "u", 4: "c" },
+                  { 1: "a", 2: "t", 3: "i", 4: "o" },
+                  { 1: "n", 2: "", 3: "", 4: "" },
+                ]}
+              />
+            </div>
+            <div className="about-section-education__content">
+              <div className="about-section-education__content-wrapper">
+                <div className="about-section-education__content-row">
+                  <LineCardLeftComponent
+                    year1={"2019"}
+                    year2={"Onwards"}
+                    heading={"Bahria University"}
+                    number={"01"}
+                    skill={"Bachelor of Computer Science"}
+                    text={
+                      "Pursuing Bachelors in Computer Science from a prestigious Bahria University which is expected to complete in 2023."
+                    }
+                  />
+                  <LineCardRightComponent
+                    year1={"2019"}
+                    year2={"Onwards"}
+                    heading={"PIAIC"}
+                    number={"02"}
+                    skill={"Blockchain and Cloud Native Computing"}
+                    text={"Studying Blockchain and Cloud Technologies From Presidential Initiative for Artificial Intelligence and Computing."}
+                  />
+                  <LineCardLeftComponent
+                    year1={"2019"}
+                    year2={"2020"}
+                    heading={"Aptech Computer Institute"}
+                    number={"02"}
+                    skill={"Diploma in Information Systems Management (DISM)"}
+                    text={"Learned about Front-end and Backend Technologies and Some programming Languages."}
+                  />
+                  <LineCardRightComponent
+                    year1={"2017"}
+                    year2={"2019"}
+                    heading={"Bahria College Karsaz"}
+                    number={"03"}
+                    skill={"Intermediate (Pre-Engineering)"}
+                    text={""}
+                  />
+                  <LineCardLeftComponent
+                    year1={"2015"}
+                    year2={"2013"}
+                    heading={"Azeemi Public Higher Secondary School"}
+                    number={"01"}
+                    skill={"Matriculation (Computer Science)"}
+                    text={""}
+                  />
+                  <LineCardRightComponent
+                    year1={"2005"}
+                    year2={"2015"}
+                    heading={"Azeemi Public Higher Secondary School"}
+                    number={"01"}
+                    skill={"High School (Science)"}
+                    text={""}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   );
 }

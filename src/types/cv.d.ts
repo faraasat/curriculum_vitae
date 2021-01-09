@@ -43,3 +43,25 @@ export interface ICustomButton {
   className?: string;
   Ico?: any;
 }
+
+export interface ITypographyStyleTextPattern {
+  text: {
+    1: string;
+    2: string;
+    3: string;
+    4: string;
+  }[];
+}
+
+export interface ITypographyStyle {
+  text: string;
+}
+
+export interface ILineCard {
+  year1: string;
+  year2: string;
+  number: string;
+  heading: string;
+  skill: string;
+  text: string;
+}

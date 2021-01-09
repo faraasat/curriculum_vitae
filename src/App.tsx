@@ -1,15 +1,16 @@
 import "./App.css";
-import { About, Header } from "./listing";
+import { About, Header, Portfolio } from "./listing";
 
 function App() {
   return (
     <div>
-      <div className='cv-app-header-alignment'>
+      <section className="cv-app-header-alignment">
         <Header />
-      </div>
-      <div className='cv-app-body-alignment'>
+      </section>
+      <section className="cv-app-body-alignment">
         <About />
-      </div>
+        <Portfolio />
+      </section>
     </div>
   );
 }

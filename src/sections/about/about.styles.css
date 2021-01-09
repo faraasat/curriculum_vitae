@@ -38,7 +38,7 @@
   width: 850px !important;
   padding: 0;
   margin-block: 0;
-  animation: aboutImg 10s infinite linear;
+  animation: aboutImg 30s infinite linear;
   animation-fill-mode: none;
 }
 
@@ -152,3 +152,118 @@
   background: rgb(255, 174, 0) !important;
   box-shadow: 0px 1px 20px 5px rgba(0, 195, 255, 0.3) !important;
 }
+
+.about-section-education__alignment {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 1600px;
+}
+
+.about-section-education__background {
+  user-select: none;
+  position: absolute;
+  top: 920px;
+  left: 100px;
+  z-index: -5;
+}
+
+.about-section-education__background-image {
+  background-image: url("../../assets/education.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 93vw;
+  height: 1600px !important;
+  height: auto;
+  opacity: 0.3;
+}
+
+.about-section-education__content-background {
+  z-index: 3;
+  width: 93vw;
+  background-image: linear-gradient(
+    150deg,
+    rgba(1, 1, 1, 0.75),
+    rgba(73, 73, 73, 0.75),
+    rgba(161, 161, 161, 0.75),
+    rgba(255, 255, 255, 0.75)
+  ) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-section-education__heading {
+  margin-top: 170px;
+}
+
+.about-section-education__heading .typography-text-styling {
+  cursor: pointer;
+  font-size: 90px !important;
+  line-height: 100% !important;
+  height: auto !important;
+}
+
+.about-section-education__container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-section-education__content {
+  margin-top: 150px;
+}
+
+.about-section-education__content::after {
+  content: "";
+  position: absolute;
+  background-color: #ff517e;
+  width: 3px !important;
+  margin: 0px auto;
+  z-index: -1;
+  height: 1240px !important;
+  transform: translate(184px, -1380px);
+}
+
+.about-section-education__content-row > .line-card-items__right {
+  transform: translateY(-40px);
+}
+
+.about-section-education__heading:hover > * {
+  animation: rubberBand 1s ease-in;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+} 
