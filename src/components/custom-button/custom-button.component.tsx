@@ -1,6 +1,11 @@
 import { Icon } from "@material-ui/core";
 import { ICustomButton } from "../../types/cv";
-import "./custom-button.styles.css";
+import {
+  CvCustomButtonComponentStyles,
+  CvCustomButtonIconComponentStyles,
+  CvCustomButtonTxt1ComponentStyles,
+  CvCustomButtonTxt2ComponentStyles,
+} from "./custom-button.styles";
 
 const CustomButton: React.FC<ICustomButton> = ({
   txt1,
@@ -10,16 +15,17 @@ const CustomButton: React.FC<ICustomButton> = ({
   Ico,
 }) => {
   return (
-    <button
-      className={`cv-custom-button-component ${className}`}
-      onClick={onClick}
-    >
-      <span className="cv-custom-button-component__txt1">
+    <CvCustomButtonComponentStyles className={className} onClick={onClick}>
+      <CvCustomButtonTxt1ComponentStyles>
         {txt1}&nbsp;
-        <Icon className="cv-custom-button-component__ico" component={Ico} />
-      </span>
-      <span className="cv-custom-button-component__txt2">{txt2}</span>
-    </button>
+        <CvCustomButtonIconComponentStyles>
+          <Icon component={Ico} />
+        </CvCustomButtonIconComponentStyles>
+      </CvCustomButtonTxt1ComponentStyles>
+      <CvCustomButtonTxt2ComponentStyles>
+        {txt2}
+      </CvCustomButtonTxt2ComponentStyles>
+    </CvCustomButtonComponentStyles>
   );
 };
 

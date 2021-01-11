@@ -12,14 +12,14 @@
 
 .portfolio-skills-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   word-wrap: wrap;
   width: 80%;
 }
 
-.portfolio-skills-container div {
+.portfolio-skills-container {
   margin-bottom: 40px;
 }
 
@@ -28,6 +28,14 @@
   align-items: center;
   justify-content: space-evenly;
   width: 80%;
+}
+
+.portfolio-skills-container__alignment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .portfolio-skills-icons {
@@ -59,6 +67,168 @@
 
 .portfolio-skills-icon__js:hover {
   color: yellow;
+}
+
+.portfolio-skills-icon__ts {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 20px;
+}
+
+.portfolio-skills-icon__ts:hover {
+  fill: blue !important;
+  transform: scale(1.05);
+}
+
+.portfolio-skills-icon__redux {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 20px;
+}
+
+.portfolio-skills-icon__redux:hover {
+  fill: purple !important;
+  transform: scale(1.05);
+}
+
+.portfolio-skills-icon__kube {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 10px 0 10px;
+}
+
+.portfolio-skills-icon__kube:hover {
+  fill: blue !important;
+  transform: scale(1.05);
+}
+
+.portfolio-skills-icon__asp {
+  width: 90px !important;
+  height: 90px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 11px 0 11px;
+  transform: translateY(5px);
+}
+
+.portfolio-skills-icon__asp:hover {
+  fill: blue !important;
+  transform: translateY(5px) scale(1.05);
+}
+
+.portfolio-skills-icon__mssql {
+  width: 90px !important;
+  height: 90px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 13px 0 17px;
+}
+
+.portfolio-skills-icon__mssql:hover {
+  fill: red !important;
+  transform: scale(1.05);
+}
+
+.portfolio-skills-icon__c {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px 0px 17px;
+  transform: translateY(5px);
+}
+
+.portfolio-skills-icon__c:hover {
+  fill: rgb(46, 95, 255) !important;
+  transform: translateY(5px) scale(1.05);
+}
+
+.portfolio-skills-icon__cpp {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px;
+  transform: translateY(5px);
+}
+
+.portfolio-skills-icon__cpp:hover {
+  fill: rgb(46, 95, 255) !important;
+  transform: translateY(5px) scale(1.05);
+}
+
+.portfolio-skills-icon__cs {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px 0px 17px;
+  transform: translateY(5px);
+}
+
+.portfolio-skills-icon__cs:hover {
+  fill: purple !important;
+  transform: translateY(5px) scale(1.05);
+}
+
+.portfolio-skills-icon__gatsby {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px 0px 17px;
+}
+
+.portfolio-skills-icon__gatsby:hover {
+  fill: purple !important;
+  transform: scale(1.05);
+}
+
+.portfolio-skills-icon__linux {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px 0px 17px;
+  transform: translateY(5px);
+}
+
+.portfolio-skills-icon__linux:hover {
+  fill: yellow !important;
+  transform: translateY(5px) scale(1.05);
+}
+
+.portfolio-skills-icon__postgre {
+  width: 70px !important;
+  height: 70px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px 0px 17px;
+  transform: translateY(5px);
+}
+
+.portfolio-skills-icon__postgre:hover {
+  fill: blue !important;
+  transform: translateY(5px) scale(1.05);
+}
+
+.portfolio-skills-icon__graphql {
+  width: 75px !important;
+  height: 75px !important;
+  cursor: pointer;
+  fill: grey !important;
+  margin: 0px 15px 0px 17px;
+}
+
+.portfolio-skills-icon__graphql:hover {
+  fill: palevioletred !important;
+  transform: scale(1.05);
 }
 
 .portfolio-skills-icon__react:hover {

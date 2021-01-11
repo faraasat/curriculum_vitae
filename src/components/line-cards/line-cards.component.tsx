@@ -1,5 +1,24 @@
 import { ILineCard } from "../../types/cv";
-import "./line-cards.styles.css";
+import {
+  LineCardItemsLeftStyles,
+  LineCardItemsRightStyles,
+  LineCardItemsLeftRoundYearStyles,
+  LineCardItemsRightRoundYearStyles,
+  LineCardItemsLeftBoxInfoStyles,
+  LineCardItemsLeftBoxParaStyles,
+  LineCardItemsLeftBoxStyles,
+  LineCardItemsLeftBoxTagBoxStyles,
+  LineCardItemsLeftBoxTagLeftTitleStyles,
+  LineCardItemsLeftBoxTagRightTitleStyles,
+  LineCardItemsLeftBoxTagStyles,
+  LineCardItemsRightBoxInfoStyles,
+  LineCardItemsRightBoxParaStyles,
+  LineCardItemsRightBoxStyles,
+  LineCardItemsRightBoxTagBoxStyles,
+  LineCardItemsRightBoxTagLeftTitleStyles,
+  LineCardItemsRightBoxTagRightTitleStyles,
+  LineCardItemsRightBoxTagStyles,
+} from "./line-cards.styles";
 
 export const LineCardLeftComponent: React.FC<ILineCard> = ({
   year1,
@@ -8,35 +27,38 @@ export const LineCardLeftComponent: React.FC<ILineCard> = ({
   heading,
   skill,
   text,
+  color,
 }) => {
   return (
-    <div className="line-card-items__left">
-      <div className="line-card-items__left__round">
-        <div className="line-card-items__left__round-year">
-          <h1>
-            <span>
-              {year1}
-              <br />to<br />
-              {year2}
-            </span>
-          </h1>
-        </div>
-      </div>
-      <div className="line-card-items__left__box">
-        <div className="line-card-items__left__box-tag">
-          <div className="line-card-items__left__box-tag__box">
-            <div className="line-card-items__left__box-tag__left-title">
+    <LineCardItemsLeftStyles>
+      <LineCardItemsLeftRoundYearStyles color={color}>
+        <h1>
+          <span>
+            {year1}
+            <br />
+            to
+            <br />
+            {year2}
+          </span>
+        </h1>
+      </LineCardItemsLeftRoundYearStyles>
+      <LineCardItemsLeftBoxStyles>
+        <LineCardItemsLeftBoxTagStyles>
+          <LineCardItemsLeftBoxTagBoxStyles>
+            <LineCardItemsLeftBoxTagLeftTitleStyles>
               <h1>{number}</h1>
-            </div>
-            <div className="line-card-items__left__box-tag__right-title">
+            </LineCardItemsLeftBoxTagLeftTitleStyles>
+            <LineCardItemsLeftBoxTagRightTitleStyles color={color}>
               <h1>{heading}</h1>
-            </div>
-          </div>
-        </div>
-        <h3 className="line-card-items__left__box-info">{skill}</h3>
-        <p className="line-card-items__left__box-para">{text}</p>
-      </div>
-    </div>
+            </LineCardItemsLeftBoxTagRightTitleStyles>
+          </LineCardItemsLeftBoxTagBoxStyles>
+        </LineCardItemsLeftBoxTagStyles>
+        <LineCardItemsLeftBoxInfoStyles color={color}>
+          {skill}
+        </LineCardItemsLeftBoxInfoStyles>
+        <LineCardItemsLeftBoxParaStyles>{text}</LineCardItemsLeftBoxParaStyles>
+      </LineCardItemsLeftBoxStyles>
+    </LineCardItemsLeftStyles>
   );
 };
 
@@ -47,36 +69,39 @@ export const LineCardRightComponent: React.FC<ILineCard> = ({
   heading,
   skill,
   text,
+  color,
 }) => {
   return (
-    <div className="line-card-items__right">
-      <div className="line-card-items__right__box">
-        <div className="line-card-items__right__box-inner">
-          <div className="line-card-items__right__box-tag">
-            <div className="line-card-items__right__box-tag__box">
-              <div className="line-card-items__right__box-tag__right-title">
-                <h1>{heading}</h1>
-              </div>
-              <div className="line-card-items__right__box-tag__left-title">
-                <h1>{number}</h1>
-              </div>
-            </div>
-          </div>
-          <h3 className="line-card-items__right__box-info">{skill}</h3>
-          <p className="line-card-items__right__box-para">{text}</p>
-        </div>
-      </div>
-      <div className="line-card-items__right__round">
-        <div className="line-card-items__right__round-year">
-          <h1>
-            <span>
-              {year1}
-              <br />to<br />
-              {year2}
-            </span>
-          </h1>
-        </div>
-      </div>
-    </div>
+    <LineCardItemsRightStyles>
+      <LineCardItemsRightBoxStyles>
+        <LineCardItemsRightBoxTagStyles>
+          <LineCardItemsRightBoxTagBoxStyles>
+            <LineCardItemsRightBoxTagRightTitleStyles color={color}>
+              <h1>{heading}</h1>
+            </LineCardItemsRightBoxTagRightTitleStyles>
+            <LineCardItemsRightBoxTagLeftTitleStyles>
+              <h1>{number}</h1>
+            </LineCardItemsRightBoxTagLeftTitleStyles>
+          </LineCardItemsRightBoxTagBoxStyles>
+        </LineCardItemsRightBoxTagStyles>
+        <LineCardItemsRightBoxInfoStyles color={color}>
+          {skill}
+        </LineCardItemsRightBoxInfoStyles>
+        <LineCardItemsRightBoxParaStyles>
+          {text}
+        </LineCardItemsRightBoxParaStyles>
+      </LineCardItemsRightBoxStyles>
+      <LineCardItemsRightRoundYearStyles color={color}>
+        <h1>
+          <span>
+            {year1}
+            <br />
+            to
+            <br />
+            {year2}
+          </span>
+        </h1>
+      </LineCardItemsRightRoundYearStyles>
+    </LineCardItemsRightStyles>
   );
 };

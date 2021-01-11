@@ -1,6 +1,12 @@
 import { IHeaderIconStyles } from "../../types/cv";
-import HeaderIconComponent from "../header-icon/header-icon.component";
-import "./header-icon-styled.styles.css";
+import {
+  CvHeaderAboutIconIconStyles,
+  CvHeaderAboutIconPositionStyles,
+  CvHeaderAboutIconStylingHoverHiddenStyles,
+  CvHeaderAboutIconStylingHoverHiddenTextStyles,
+  CvHeaderAboutIconStylingHoverVisibleStyles,
+  CvHeaderAboutIconStylingStyles,
+} from "./header-icon.styles";
 
 const HeaderIconStyledComponent: React.FC<IHeaderIconStyles> = ({
   Icon,
@@ -9,28 +15,23 @@ const HeaderIconStyledComponent: React.FC<IHeaderIconStyles> = ({
   onClick,
 }) => {
   return (
-    <div className="cv-header__about-icon__icon" onClick={onClick}>
-      <div className="cv-header__about-icon__position">
-        <button className="cv-header__about-icon__styling">
-          <HeaderIconComponent
-            className="cv-header__about-icon__styling-hover-visible"
+    <CvHeaderAboutIconIconStyles onClick={onClick}>
+      <CvHeaderAboutIconPositionStyles>
+        <CvHeaderAboutIconStylingStyles>
+          <CvHeaderAboutIconStylingHoverVisibleStyles
             component={Icon}
             color={color}
           />
-          <HeaderIconComponent
-            className="cv-header__about-icon__styling-hover-hidden"
+          <CvHeaderAboutIconStylingHoverHiddenStyles
             component={Icon}
             color={color}
           />
-        </button>
-        <p
-          style={{ color: color }}
-          className="cv-header__about-icon__styling-hover-hidden__text"
-        >
+        </CvHeaderAboutIconStylingStyles>
+        <CvHeaderAboutIconStylingHoverHiddenTextStyles style={{ color: color }}>
           {text}
-        </p>
-      </div>
-    </div>
+        </CvHeaderAboutIconStylingHoverHiddenTextStyles>
+      </CvHeaderAboutIconPositionStyles>
+    </CvHeaderAboutIconIconStyles>
   );
 };
 

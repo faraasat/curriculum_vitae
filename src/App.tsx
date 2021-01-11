@@ -1,16 +1,21 @@
-import "./App.css";
-import { About, Header, Portfolio } from "./listing";
+import {
+  CvAppBodyAlignmentStyles,
+  CvAppHeaderAlignmentStyles,
+} from "./App.style";
+import { About, Education, Head, Header, Portfolio } from "./listing";
 
 function App() {
   return (
     <div>
-      <section className="cv-app-header-alignment">
+      <CvAppHeaderAlignmentStyles>
         <Header />
-      </section>
-      <section className="cv-app-body-alignment">
+      </CvAppHeaderAlignmentStyles>
+      <CvAppBodyAlignmentStyles>
+        <Head />
         <About />
+        <Education />
         <Portfolio />
-      </section>
+      </CvAppBodyAlignmentStyles>
     </div>
   );
 }

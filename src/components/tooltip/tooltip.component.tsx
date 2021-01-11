@@ -19,7 +19,6 @@ const ToolTipComponent: React.FC<ITooltipComponent> = ({
 
   return (
     <Tooltip
-      className={`tooltip-interactive-arrow`}
       classes={{ tooltip: classes.customWidth }}
       title={text}
       arrow

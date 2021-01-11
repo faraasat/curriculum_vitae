@@ -15,6 +15,19 @@ import {
   faRust,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
+import { ReactComponent as TypeScript } from "../../assets/ts.svg";
+import { ReactComponent as Redux } from "../../assets/redux.svg";
+import { ReactComponent as Kube } from "../../assets/kube.svg";
+import { ReactComponent as Asp } from "../../assets/asp.svg";
+import { ReactComponent as CLang } from "../../assets/c.svg";
+import { ReactComponent as CPP } from "../../assets/cpp.svg";
+import { ReactComponent as CS } from "../../assets/cs.svg";
+import { ReactComponent as Gatsby } from "../../assets/gatsby.svg";
+import { ReactComponent as Linux } from "../../assets/linux.svg";
+import { ReactComponent as Postgre } from "../../assets/postgre.svg";
+import { ReactComponent as Graphql } from "../../assets/graphql.svg";
+import { ReactComponent as MsSql } from "../../assets/mssql.svg";
+import { Icon } from "@material-ui/core";
 
 const PortfolioComponent = () => {
   return (
@@ -22,7 +35,7 @@ const PortfolioComponent = () => {
       <div className="portfolio-skills-background">
         <div className="portfolio-skills-alignment">
           <div className="portfolio-skills-container">
-            <div>
+            <div className="portfolio-skills-container__alignment">
               <FontAwesomeIcon
                 className="portfolio-skills-icons portfolio-skills-icon__html"
                 icon={faHtml5}
@@ -43,9 +56,25 @@ const PortfolioComponent = () => {
                 className="portfolio-skills-icons portfolio-skills-icon__js"
                 icon={faJs}
               />
+              <Icon
+                component={TypeScript}
+                className="portfolio-skills-icon__ts"
+              />
               <FontAwesomeIcon
                 className="portfolio-skills-icons portfolio-skills-icon__react"
                 icon={faReact}
+              />
+              <Icon
+                component={Redux}
+                className="portfolio-skills-icon__redux"
+              />
+              <Icon
+                component={Gatsby}
+                className="portfolio-skills-icon__gatsby"
+              />
+              <Icon
+                component={Graphql}
+                className="portfolio-skills-icon__graphql"
               />
               <FontAwesomeIcon
                 className="portfolio-skills-icons portfolio-skills-icon__node"
@@ -55,12 +84,27 @@ const PortfolioComponent = () => {
                 className="portfolio-skills-icons portfolio-skills-icon__docker"
                 icon={faDocker}
               />
+              <Icon component={Kube} className="portfolio-skills-icon__kube" />
               <FontAwesomeIcon
                 className="portfolio-skills-icons portfolio-skills-icon__git"
                 icon={faGitAlt}
               />
-            </div>
-            <div>
+              <Icon component={Asp} className="portfolio-skills-icon__asp" />
+              <Icon component={CLang} className="portfolio-skills-icon__c" />
+              <Icon component={CPP} className="portfolio-skills-icon__cpp" />
+              <Icon component={CS} className="portfolio-skills-icon__cs" />
+              <Icon
+                component={Linux}
+                className="portfolio-skills-icon__linux"
+              />
+              <Icon
+                component={Postgre}
+                className="portfolio-skills-icon__postgre"
+              />
+              <Icon
+                component={MsSql}
+                className="portfolio-skills-icon__mssql"
+              />
               <FontAwesomeIcon
                 className="portfolio-skills-icons portfolio-skills-icon__java"
                 icon={faJava}

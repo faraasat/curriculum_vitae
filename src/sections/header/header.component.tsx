@@ -1,4 +1,3 @@
-import "./header.styles.css";
 import ProfileImg from "../../assets/profile-image.png";
 import LogoComponent from "../../components/logo/logo.component";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
@@ -13,6 +12,21 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import {
+  CvHeaderIconsStyles,
+  CvHeaderImageStyles,
+  CvHeaderSocialIconFacebookStyles,
+  CvHeaderSocialIconInstagramStyles,
+  CvHeaderSocialIconLinkedInStyles,
+  CvHeaderSocialIconsStyles,
+  CvHeaderSocialIconTelegramStyles,
+  CvHeaderSocialIconTwitterStyles,
+  CvHeaderSocialIconWhatsAppStyles,
+  CvHeaderSocialStyles,
+  CvHeaderSocialTextStyles,
+  CvHeaderStyles,
+  CvHeaderSocialIconGitHubStyles,
+} from "./header.styles";
 
 export default function AboutSection() {
   const scrollToAbout = () => {
@@ -21,16 +35,16 @@ export default function AboutSection() {
   };
 
   return (
-    <div className="cv-header">
-      <div className="cv-header__image">
+    <CvHeaderStyles>
+      <CvHeaderImageStyles>
         <LogoComponent
           src={ProfileImg}
           alt={"Profile - Farasat Ali"}
           draggable={"false"}
         />
-      </div>
+      </CvHeaderImageStyles>
 
-      <div className="cv-header__icons">
+      <CvHeaderIconsStyles>
         <hr />
         <HeaderIconStyledComponent
           onClick={scrollToAbout}
@@ -57,63 +71,57 @@ export default function AboutSection() {
           text={"Contact"}
         />
         <hr />
-      </div>
+      </CvHeaderIconsStyles>
 
-      <div className="cv-header__social">
-        <div className="cv-header__social-text">
+      <CvHeaderSocialStyles>
+        <CvHeaderSocialTextStyles>
           <p>Follow Us</p>
-        </div>
-      </div>
-      <div className="cv-header__social-icons">
-        <a
-          id="cv-header__social-icons__facebook"
+        </CvHeaderSocialTextStyles>
+      </CvHeaderSocialStyles>
+      <CvHeaderSocialIconsStyles>
+        <CvHeaderSocialIconFacebookStyles
           href="https://facebook.com/FarasatAliAzeemi/"
           target="_new"
         >
           <FacebookIcon />
-        </a>
-        <a
-          id="cv-header__social-icons__linked-in"
+        </CvHeaderSocialIconFacebookStyles>
+        <CvHeaderSocialIconLinkedInStyles
           href="https://www.linkedin.com/in/faraasat/"
           target="_new"
         >
           <LinkedInIcon />
-        </a>
+        </CvHeaderSocialIconLinkedInStyles>
         <br />
-        <a
-          id="cv-header__social-icons__instagram"
+        <CvHeaderSocialIconInstagramStyles
           href="https://www.instagram.com/farasat_ali_azeemi/"
           target="_new"
         >
           <InstagramIcon />
-        </a>
-        <a
-          id="cv-header__social-icons__github"
+        </CvHeaderSocialIconInstagramStyles>
+        <CvHeaderSocialIconGitHubStyles
           href="https://github.com/faraasat"
           target="_new"
         >
           <GitHubIcon />
-        </a>
+        </CvHeaderSocialIconGitHubStyles>
         <br />
-        <a
-          id="cv-header__social-icons__telegram"
+        <CvHeaderSocialIconTelegramStyles
           href="https://t.me/farasat_azeemi/"
           target="_new"
         >
           <TelegramIcon />
-        </a>
-        <a
-          id="cv-header__social-icons__whatsApp"
+        </CvHeaderSocialIconTelegramStyles>
+        <CvHeaderSocialIconWhatsAppStyles
           href="https://wa.link/7xeqob"
           target="_new"
         >
           <WhatsAppIcon />
-        </a>
+        </CvHeaderSocialIconWhatsAppStyles>
         <br />
-        <a id="cv-header__social-icons__twitter" href="#!" target="_new">
+        <CvHeaderSocialIconTwitterStyles href="#!" target="_new">
           <TwitterIcon />
-        </a>
-      </div>
-    </div>
+        </CvHeaderSocialIconTwitterStyles>
+      </CvHeaderSocialIconsStyles>
+    </CvHeaderStyles>
   );
 }

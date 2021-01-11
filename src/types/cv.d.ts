@@ -12,7 +12,7 @@ export interface IProfileImage {
 export interface IHeaderIcon {
   component: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
   color: string;
-  className: string;
+  className?: string;
 }
 
 export interface IHeaderIconStyles {
@@ -60,6 +60,7 @@ export interface ITypographyStyle {
 }
 
 export interface ILineCard {
+  color: string;
   year1: string;
   year2: string;
   number: string;

@@ -1,7 +1,7 @@
 import { Zoom } from "@material-ui/core";
 import { IProfileImage } from "../../types/cv";
 import ToolTipComponent from "../tooltip/tooltip.component";
-import "./logo.styles.css";
+import { CvHeaderImageBackground } from "./logo.styles";
 
 const LogoComponent: React.FC<IProfileImage> = ({
   src,
@@ -16,12 +16,7 @@ const LogoComponent: React.FC<IProfileImage> = ({
       placement="right"
       text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Front-End Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: Farasat Ali &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Age: 18"
     >
-      <img
-        src={src}
-        alt={alt}
-        className="cv-header__image-background"
-        draggable={draggable}
-      />
+      <CvHeaderImageBackground src={src} alt={alt} draggable={draggable} />
     </ToolTipComponent>
   );
 };

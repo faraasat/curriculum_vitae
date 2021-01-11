@@ -1,44 +1,33 @@
 import { ITypographyStyle, ITypographyStyleTextPattern } from "../../types/cv";
-import "./typography.styles.css";
 import cuid from "cuid";
+import {
+  TypographyTextStyling1,
+  TypographyTextStyling2,
+  TypographyTextStyling3,
+  TypographyTextStyling4,
+} from "./typography.styles";
 
 export const TypographyStyle1: React.FC<ITypographyStyle> = ({ text }) => {
-  return (
-    <div className="typography-text-styling typography-text-styling-1">
-      {text}
-    </div>
-  );
+  return <TypographyTextStyling1>{text}</TypographyTextStyling1>;
 };
 
 export const TypographyStyle2: React.FC<ITypographyStyle> = ({ text }) => {
-  return (
-    <div className="typography-text-styling typography-text-styling-2">
-      {text}
-    </div>
-  );
+  return <TypographyTextStyling2>{text}</TypographyTextStyling2>;
 };
 
 export const TypographyStyle3: React.FC<ITypographyStyle> = ({ text }) => {
-  return (
-    <div className="typography-text-styling typography-text-styling-3">
-      {text}
-    </div>
-  );
+  return <TypographyTextStyling3>{text}</TypographyTextStyling3>;
 };
 
 export const TypographyStyle4: React.FC<ITypographyStyle> = ({ text }) => {
-  return (
-    <div className="typography-text-styling typography-text-styling-4">
-      {text}
-    </div>
-  );
+  return <TypographyTextStyling4>{text}</TypographyTextStyling4>;
 };
 
 export const TypographyStyleTextPattern: React.FC<ITypographyStyleTextPattern> = ({
   text,
 }) => {
   return (
-    <div className="typography-text-styling-pattern">
+    <>
       {text.map((txt) => {
         return (
           <span key={cuid()}>
@@ -49,6 +38,6 @@ export const TypographyStyleTextPattern: React.FC<ITypographyStyleTextPattern> =
           </span>
         );
       })}
-    </div>
+    </>
   );
 };
