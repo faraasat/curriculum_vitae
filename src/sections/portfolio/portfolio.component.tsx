@@ -19,18 +19,64 @@ import {
 const PortfolioComponent = () => {
   return (
     <div>
-      <FontAwesomeIcon icon={faHtml5} />
-      <FontAwesomeIcon icon={faCss3Alt} />
-      <FontAwesomeIcon icon={faSass} />
-      <FontAwesomeIcon icon={faBootstrap} />
-      <FontAwesomeIcon icon={faJs} />
-      <FontAwesomeIcon icon={faReact} />
-      <FontAwesomeIcon icon={faNode} />
-      <FontAwesomeIcon icon={faDocker} />
-      <FontAwesomeIcon icon={faGitAlt} />
-      <FontAwesomeIcon icon={faJava} />
-      <FontAwesomeIcon icon={faPython} />
-      <FontAwesomeIcon icon={faRust} />
+      <div className="portfolio-skills-background">
+        <div className="portfolio-skills-alignment">
+          <div className="portfolio-skills-container">
+            <div>
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__html"
+                icon={faHtml5}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__css"
+                icon={faCss3Alt}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__sass"
+                icon={faSass}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__bootstrap"
+                icon={faBootstrap}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__js"
+                icon={faJs}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__react"
+                icon={faReact}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__node"
+                icon={faNode}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__docker"
+                icon={faDocker}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__git"
+                icon={faGitAlt}
+              />
+            </div>
+            <div>
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__java"
+                icon={faJava}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__python"
+                icon={faPython}
+              />
+              <FontAwesomeIcon
+                className="portfolio-skills-icons portfolio-skills-icon__rust"
+                icon={faRust}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

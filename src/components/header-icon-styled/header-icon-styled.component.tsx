@@ -3,15 +3,15 @@ import HeaderIconComponent from "../header-icon/header-icon.component";
 import "./header-icon-styled.styles.css";
 
 const HeaderIconStyledComponent: React.FC<IHeaderIconStyles> = ({
-  href,
   Icon,
   color,
   text,
+  onClick,
 }) => {
   return (
-    <div className="cv-header__about-icon__icon">
+    <div className="cv-header__about-icon__icon" onClick={onClick}>
       <div className="cv-header__about-icon__position">
-        <a href={href} className="cv-header__about-icon__styling">
+        <button className="cv-header__about-icon__styling">
           <HeaderIconComponent
             className="cv-header__about-icon__styling-hover-visible"
             component={Icon}
@@ -22,7 +22,7 @@ const HeaderIconStyledComponent: React.FC<IHeaderIconStyles> = ({
             component={Icon}
             color={color}
           />
-        </a>
+        </button>
         <p
           style={{ color: color }}
           className="cv-header__about-icon__styling-hover-hidden__text"

@@ -85,7 +85,10 @@ export default function AboutSection() {
         </div>
         <div className="about-section-education__content-background">
           <div className="about-section-education__container">
-            <div className="about-section-education__heading">
+            <div
+              className="about-section-education__heading"
+              id="about-education-section-scroll"
+            >
               <TypographyStyleTextPattern
                 text={[
                   { 1: "E", 2: "d", 3: "u", 4: "c" },
@@ -96,58 +99,66 @@ export default function AboutSection() {
             </div>
             <div className="about-section-education__content">
               <div className="about-section-education__content-wrapper">
-                <div className="about-section-education__content-row">
-                  <LineCardLeftComponent
-                    year1={"2019"}
-                    year2={"Onwards"}
-                    heading={"Bahria University"}
-                    number={"01"}
-                    skill={"Bachelor of Computer Science"}
-                    text={
-                      "Pursuing Bachelors in Computer Science from a prestigious Bahria University which is expected to complete in 2023."
-                    }
-                  />
-                  <LineCardRightComponent
-                    year1={"2019"}
-                    year2={"Onwards"}
-                    heading={"PIAIC"}
-                    number={"02"}
-                    skill={"Blockchain and Cloud Native Computing"}
-                    text={"Studying Blockchain and Cloud Technologies From Presidential Initiative for Artificial Intelligence and Computing."}
-                  />
-                  <LineCardLeftComponent
-                    year1={"2019"}
-                    year2={"2020"}
-                    heading={"Aptech Computer Institute"}
-                    number={"02"}
-                    skill={"Diploma in Information Systems Management (DISM)"}
-                    text={"Learned about Front-end and Backend Technologies and Some programming Languages."}
-                  />
-                  <LineCardRightComponent
-                    year1={"2017"}
-                    year2={"2019"}
-                    heading={"Bahria College Karsaz"}
-                    number={"03"}
-                    skill={"Intermediate (Pre-Engineering)"}
-                    text={""}
-                  />
-                  <LineCardLeftComponent
-                    year1={"2015"}
-                    year2={"2013"}
-                    heading={"Azeemi Public Higher Secondary School"}
-                    number={"01"}
-                    skill={"Matriculation (Computer Science)"}
-                    text={""}
-                  />
-                  <LineCardRightComponent
-                    year1={"2005"}
-                    year2={"2015"}
-                    heading={"Azeemi Public Higher Secondary School"}
-                    number={"01"}
-                    skill={"High School (Science)"}
-                    text={""}
-                  />
-                </div>
+                <LineCardLeftComponent
+                  year1={"2019"}
+                  year2={"Onwards"}
+                  heading={"Bahria University"}
+                  number={"01"}
+                  skill={"Bachelor of Computer Science"}
+                  text={
+                    "Pursuing Bachelors in Computer Science from a prestigious Bahria University which is expected to complete in 2023."
+                  }
+                />
+                <LineCardRightComponent
+                  year1={"2019"}
+                  year2={"Onwards"}
+                  heading={"PIAIC"}
+                  number={"02"}
+                  skill={"Blockchain and Cloud Native Computing"}
+                  text={
+                    "Studying Blockchain and Cloud Technologies From Presidential Initiative for Artificial Intelligence and Computing."
+                  }
+                />
+                <LineCardLeftComponent
+                  year1={"2019"}
+                  year2={"2020"}
+                  heading={"Aptech Computer Institute"}
+                  number={"02"}
+                  skill={"Diploma in Information Systems Management (DISM)"}
+                  text={
+                    "Learned about Front-end and Backend Technologies and Some programming Languages."
+                  }
+                />
+                <LineCardRightComponent
+                  year1={"2017"}
+                  year2={"2019"}
+                  heading={"Bahria College Karsaz"}
+                  number={"03"}
+                  skill={"Intermediate (Pre-Engineering)"}
+                  text={
+                    "Done my Intermediate with Chemistry, Physics and Maths as major subjects from Bahria College Karsaz."
+                  }
+                />
+                <LineCardLeftComponent
+                  year1={"2015"}
+                  year2={"2013"}
+                  heading={"Azeemi Public School"}
+                  number={"01"}
+                  skill={"Matriculation (Computer Science)"}
+                  text={
+                    "Done my Matriculation with Chemistry, Physics, Maths and Computer Science as major subjects."
+                  }
+                />
+                <LineCardRightComponent
+                  year1={"2005"}
+                  year2={"2015"}
+                  heading={"Azeemi Public School"}
+                  number={"01"}
+                  skill={"High School (Science)"}
+                  text={
+                    "Studied Chemistry, Mathematics, Physics, Social Sciences and Arabic, Sindhi, Urdu and English Languages"
+                  }
+                />
               </div>
             </div>
           </div>

@@ -16,7 +16,9 @@ export interface IHeaderIcon {
 }
 
 export interface IHeaderIconStyles {
-  href: string;
+  onClick?:
+    | ((event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void)
+    | undefined;
   Icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
   color: string;
   text: string;

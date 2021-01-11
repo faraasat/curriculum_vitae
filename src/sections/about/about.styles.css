@@ -157,7 +157,7 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  height: 1600px;
+  height: 2100px;
 }
 
 .about-section-education__background {
@@ -175,7 +175,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 93vw;
-  height: 1600px !important;
+  height: 2100px !important;
   height: auto;
   opacity: 0.3;
 }
@@ -185,10 +185,10 @@
   width: 93vw;
   background-image: linear-gradient(
     150deg,
-    rgba(1, 1, 1, 0.75),
-    rgba(73, 73, 73, 0.75),
-    rgba(161, 161, 161, 0.75),
-    rgba(255, 255, 255, 0.75)
+    rgba(255, 238, 1, 0.6),
+    rgba(202, 100, 250, 0.5),
+    rgba(153, 209, 255, 0.8),
+    rgba(0, 255, 0, 0.5)
   ) !important;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@
 }
 
 .about-section-education__heading {
-  margin-top: 170px;
+  margin-top: 120px;
 }
 
 .about-section-education__heading .typography-text-styling {
@@ -226,8 +226,8 @@
   width: 3px !important;
   margin: 0px auto;
   z-index: -1;
-  height: 1240px !important;
-  transform: translate(184px, -1380px);
+  height: 1840px !important;
+  transform: translate(224px, -1975px);
 }
 
 .about-section-education__content-row > .line-card-items__right {
@@ -256,14 +256,41 @@
   }
 
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
 
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
 
   to {
     transform: scale3d(1, 1, 1);
   }
-} 
+}
+
+/* .about-section-education__content-wrapper:nth-child(1),
+.about-section-education__content-wrapper:nth-child(1)
+  .line-card-items__left__round-year
+  h1 {
+  color: #00b7ff !important;
+}
+.about-section-education__content-wrapper:nth-child(1)
+  .line-card-items__left__box-tag__right-title
+  h1 {
+  background-color: #00b7ff !important;
+}
+.about-section-education__content-wrapper:nth-child(1)
+  .line-card-items__left__round-year
+  h1:after {
+  border-left-color: #00b7ff !important;
+}
+.about-section-education__content-wrapper:nth-child(1)
+  .line-card-items__left__round-year
+  h1:before {
+  border-color: #00b7ff !important;
+}
+.about-section-education__content-wrapper:nth-child(1)
+  .line-card-items__left__round-year:after {
+  background: #00b7ff !important;
+} */
+

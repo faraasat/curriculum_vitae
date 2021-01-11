@@ -15,6 +15,11 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 export default function AboutSection() {
+  const scrollToAbout = () => {
+    const section = document.querySelector("#about-education-section-scroll");
+    section!.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="cv-header">
       <div className="cv-header__image">
@@ -28,28 +33,25 @@ export default function AboutSection() {
       <div className="cv-header__icons">
         <hr />
         <HeaderIconStyledComponent
-          href={"java"}
+          onClick={scrollToAbout}
           Icon={EqualizerIcon}
           color={"rgba(255, 0, 0, 0.65)"}
           text={"About"}
         />
         <hr />
         <HeaderIconStyledComponent
-          href={"java"}
           Icon={LocalMallIcon}
           color={"rgba(0, 81, 255, 0.65)"}
           text={"Portfolio"}
         />
         <hr />
         <HeaderIconStyledComponent
-          href={"java"}
           Icon={SpeakerNotesIcon}
           color={"rgba(255, 123, 0, 0.65)"}
           text={"Testimonial"}
         />
         <hr />
         <HeaderIconStyledComponent
-          href={"java"}
           Icon={ContactSupportIcon}
           color={"rgba(0, 255, 34, 0.65)"}
           text={"Contact"}

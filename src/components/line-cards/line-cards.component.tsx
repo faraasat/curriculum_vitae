@@ -16,7 +16,7 @@ export const LineCardLeftComponent: React.FC<ILineCard> = ({
           <h1>
             <span>
               {year1}
-              <br />-<br />
+              <br />to<br />
               {year2}
             </span>
           </h1>
@@ -71,7 +71,7 @@ export const LineCardRightComponent: React.FC<ILineCard> = ({
           <h1>
             <span>
               {year1}
-              <br />-<br />
+              <br />to<br />
               {year2}
             </span>
           </h1>

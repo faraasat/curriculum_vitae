@@ -48,7 +48,8 @@
   outline: none;
   overflow: hidden;
   text-align: center !important;
-  text-decoration: none;
+  outline: none;
+  border: none;
   background-color: transparent;
   transition: all 0.5s;
   box-sizing: border-box;
