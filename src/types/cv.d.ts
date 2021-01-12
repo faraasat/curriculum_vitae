@@ -68,3 +68,7 @@ export interface ILineCard {
   skill: string;
   text: string;
 }
+
+export interface IPanel {
+  panel: boolean;
+}

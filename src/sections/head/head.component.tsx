@@ -52,9 +52,9 @@ export default function AboutSection() {
               <HeadSectionBackgroundItemsTypographyTypedStyles>
                 <Typed
                   strings={[
-                    "Creative Web Developer",
-                    "Creative Web Designer",
-                    "Creative UI/UX Designer",
+                    "A Creative Web Developer",
+                    "A Creative Web Designer",
+                    "A Creative UI/UX Designer",
                   ]}
                   typeSpeed={40}
                   backSpeed={50}

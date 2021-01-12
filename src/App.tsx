@@ -2,7 +2,14 @@ import {
   CvAppBodyAlignmentStyles,
   CvAppHeaderAlignmentStyles,
 } from "./App.style";
-import { About, Education, Head, Header, Portfolio } from "./listing";
+import {
+  About,
+  Education,
+  Head,
+  Header,
+  Languages,
+  Portfolio,
+} from "./listing";
 
 function App() {
   return (
@@ -14,6 +21,7 @@ function App() {
         <Head />
         <About />
         <Education />
+        <Languages />
         <Portfolio />
       </CvAppBodyAlignmentStyles>
     </div>
