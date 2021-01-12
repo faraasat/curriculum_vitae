@@ -25,9 +25,10 @@ export const TypographyStyle4: React.FC<ITypographyStyle> = ({ text }) => {
 
 export const TypographyStyleTextPattern: React.FC<ITypographyStyleTextPattern> = ({
   text,
+  id,
 }) => {
   return (
-    <>
+    <span id={id}>
       {text.map((txt) => {
         return (
           <span key={cuid()}>
@@ -38,6 +39,6 @@ export const TypographyStyleTextPattern: React.FC<ITypographyStyleTextPattern> =
           </span>
         );
       })}
-    </>
+    </span>
   );
 };

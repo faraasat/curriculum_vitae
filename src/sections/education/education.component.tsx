@@ -22,7 +22,7 @@ export default function AboutSection() {
       </EducationSectionBackgroundStyles>
       <EducationSectionContainerBackgroundStyles>
         <EducationSectionContainerStyles>
-          <EducationSectionHeadingStyles id="about-education-section-scroll">
+          <EducationSectionHeadingStyles>
             <TypographyStyleTextPattern
               text={[
                 { 1: "E", 2: "d", 3: "u", 4: "c" },

@@ -47,6 +47,7 @@ export interface ICustomButton {
 }
 
 export interface ITypographyStyleTextPattern {
+  id?: string;
   text: {
     1: string;
     2: string;
@@ -71,4 +72,19 @@ export interface ILineCard {
 
 export interface IPanel {
   panel: boolean;
+}
+
+export interface ICircularProgress {
+  text: string;
+  percent: number;
+  color: string;
+}
+
+export interface ICircularProgressStyles {
+  percent: number;
+  color: string;
+}
+
+export interface ICircularTextStyles {
+  color: string;
 }

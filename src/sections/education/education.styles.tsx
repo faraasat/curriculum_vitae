@@ -24,7 +24,7 @@ export const EducationSectionBackgroundImageStyles = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   width: 93vw;
-  height: 1670px !important;
+  height: 1668px !important;
   height: auto;
   opacity: 0.3;
 `;

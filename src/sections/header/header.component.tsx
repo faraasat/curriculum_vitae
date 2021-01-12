@@ -30,7 +30,7 @@ import {
 
 export default function AboutSection() {
   const scrollToAbout = () => {
-    const section = document.querySelector("#about-education-section-scroll");
+    const section = document.querySelector("#about-section-scroll");
     section!.scrollIntoView({ behavior: "smooth" });
   };
 

@@ -179,7 +179,7 @@ export const AboutSectionContentDetailsStyles = styled.div<IPanel>`
   width: 90%;
   height: 480px;
   background: #101010d9;
-  padding: 50px 50px;
+  padding: 25px 50px;
   -webkit-transition: all 05s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -190,7 +190,70 @@ export const AboutSectionContentDetailsStyles = styled.div<IPanel>`
   opacity: ${(props) => (props.panel === false ? 0 : 1)};
 `;
 
-export const AboutSectionContentDetailsPersonalStyles = styled.div``;
+export const AboutSectionContentDetailsPersonalStyles = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    margin-top: 8px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 33px;
+    color: #74da20;
+  }
+
+  & h6 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 15px;
+    color: #868686;
+    margin-bottom: 20px;
+  }
+
+  & span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  & span h2 {
+    margin-top: 8px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: goldenrod;
+    width: 35%;
+  }
+
+  & span p {
+    color: white;
+  }
+`;
+
+export const AboutSectionContentIconsLinkStyles = styled.a`
+  text-decoration: none;
+  color: #706f6f;
+
+  &:hover {
+    color: #fff;
+  }
+`;
+
+export const AboutSectionContentIconsTextStyles = styled.span`
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #706f6f;
+
+  & > ${AboutSectionContentIconsLinkStyles} * {
+    cursor: pointer;
+    font-size: 40px !important;
+  }
+
+  & > ${AboutSectionContentIconsLinkStyles} *:hover {
+    color: #fff;
+  }
+`;
 
 export const AboutSectionContentContactTextStyles = styled.div`
   width: 100%;

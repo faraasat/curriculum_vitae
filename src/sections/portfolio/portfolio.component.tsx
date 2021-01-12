@@ -58,42 +58,40 @@ import Bounce from "react-reveal/Bounce";
 
 const PortfolioComponent = () => {
   return (
-    <div>
-      <PortfolioSkillsBackgroundStyles>
-        <PortfolioSkillsAlignmentStyles>
-          <PortfolioSkillsContainerStyles>
-            <PortfolioSkillsContainerAlignmentStyles>
-              <Bounce right>
-                <PortfolioSkillIconHtmlStyles icon={faHtml5} />
-                <PortfolioSkillIconCssStyles icon={faCss3Alt} />
-                <PortfolioSkillIconSassStyles icon={faSass} />
-                <PortfolioSkillIconBootstrapStyles icon={faBootstrap} />
-                <PortfolioSkillIconJsStyles icon={faJs} />
-                <PortfolioSkillIconTsStyles component={TypeScript} />
-                <PortfolioSkillIconReactStyles icon={faReact} />
-                <PortfolioSkillIconReduxStyles component={Redux} />
-                <PortfolioSkillIconGatsbyStyles component={Gatsby} />
-                <PortfolioSkillIconGraphqlStyles component={Graphql} />
-                <PortfolioSkillIconNodeStyles icon={faNode} />
-                <PortfolioSkillIconDockerStyles icon={faDocker} />
-                <PortfolioSkillIconKubeStyles component={Kube} />
-                <PortfolioSkillIconGitStyles icon={faGitAlt} />
-                <PortfolioSkillIconAspStyles component={Asp} />
-                <PortfolioSkillIconCLangStyles component={CLang} />
-                <PortfolioSkillIconCppStyles component={CPP} />
-                <PortfolioSkillIconCsStyles component={CS} />
-                <PortfolioSkillIconLinuxStyles component={Linux} />
-                <PortfolioSkillIconPostgreStyles component={Postgre} />
-                <PortfolioSkillIconMsSqlStyles component={MsSql} />
-                <PortfolioSkillIconJavaStyles icon={faJava} />
-                <PortfolioSkillIconPythonStyles icon={faPython} />
-                <PortfolioSkillIconRustStyles icon={faRust} />
-              </Bounce>
-            </PortfolioSkillsContainerAlignmentStyles>
-          </PortfolioSkillsContainerStyles>
-        </PortfolioSkillsAlignmentStyles>
-      </PortfolioSkillsBackgroundStyles>
-    </div>
+    <PortfolioSkillsBackgroundStyles>
+      <PortfolioSkillsAlignmentStyles>
+        <PortfolioSkillsContainerStyles>
+          <PortfolioSkillsContainerAlignmentStyles>
+            <Bounce right>
+              <PortfolioSkillIconHtmlStyles icon={faHtml5} />
+              <PortfolioSkillIconCssStyles icon={faCss3Alt} />
+              <PortfolioSkillIconSassStyles icon={faSass} />
+              <PortfolioSkillIconBootstrapStyles icon={faBootstrap} />
+              <PortfolioSkillIconJsStyles icon={faJs} />
+              <PortfolioSkillIconTsStyles component={TypeScript} />
+              <PortfolioSkillIconReactStyles icon={faReact} />
+              <PortfolioSkillIconReduxStyles component={Redux} />
+              <PortfolioSkillIconGatsbyStyles component={Gatsby} />
+              <PortfolioSkillIconGraphqlStyles component={Graphql} />
+              <PortfolioSkillIconNodeStyles icon={faNode} />
+              <PortfolioSkillIconDockerStyles icon={faDocker} />
+              <PortfolioSkillIconKubeStyles component={Kube} />
+              <PortfolioSkillIconGitStyles icon={faGitAlt} />
+              <PortfolioSkillIconAspStyles component={Asp} />
+              <PortfolioSkillIconCLangStyles component={CLang} />
+              <PortfolioSkillIconCppStyles component={CPP} />
+              <PortfolioSkillIconCsStyles component={CS} />
+              <PortfolioSkillIconLinuxStyles component={Linux} />
+              <PortfolioSkillIconPostgreStyles component={Postgre} />
+              <PortfolioSkillIconMsSqlStyles component={MsSql} />
+              <PortfolioSkillIconJavaStyles icon={faJava} />
+              <PortfolioSkillIconPythonStyles icon={faPython} />
+              <PortfolioSkillIconRustStyles icon={faRust} />
+            </Bounce>
+          </PortfolioSkillsContainerAlignmentStyles>
+        </PortfolioSkillsContainerStyles>
+      </PortfolioSkillsAlignmentStyles>
+    </PortfolioSkillsBackgroundStyles>
   );
 };
 

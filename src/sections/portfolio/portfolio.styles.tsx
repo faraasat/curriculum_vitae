@@ -18,7 +18,7 @@ export const PortfolioSkillsBackgroundStyles = styled.section`
 `;
 
 export const PortfolioSkillsAlignmentStyles = styled.div`
-  padding: 50px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -3,6 +3,12 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { TypographyStyleTextPattern } from "../../components/typography/typography.component";
 import CallIcon from "@material-ui/icons/Call";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TelegramIcon from "@material-ui/icons/Telegram";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import {
   AboutSectionAlignmentStyles,
@@ -23,6 +29,8 @@ import {
   AboutSectionContentImgStyles,
   AboutSectionContentImgWrapperStyles,
   AboutSectionHeadingTypographyStyles,
+  AboutSectionContentIconsTextStyles,
+  AboutSectionContentIconsLinkStyles,
 } from "./about.style";
 
 export default function AboutSection() {
@@ -36,6 +44,7 @@ export default function AboutSection() {
     <AboutSectionAlignmentStyles>
       <AboutSectionHeadingTypographyStyles>
         <TypographyStyleTextPattern
+          id="about-section-scroll"
           text={[
             { 1: "A", 2: "b", 3: "o", 4: "u" },
             { 1: "t", 2: "-", 3: "M", 4: "e" },
@@ -66,7 +75,63 @@ export default function AboutSection() {
             <AboutSectionContentDetailsStyles panel={changePanel}>
               <AboutSectionContentDetailsPersonalStyles>
                 <h1>Farasat Ali</h1>
-                <p>Front-End Web Developer</p>
+                <h6>Front-End Web Developer</h6>
+                <span>
+                  <h2>Age</h2> <p>20</p>
+                </span>
+                <span>
+                  <h2>Address</h2> <p>Karachi, Sindh, Pakistan</p>
+                </span>
+                <span>
+                  <h2>Email</h2> <p>farasataliazeemi1@gmail.com</p>
+                </span>
+                <span>
+                  <h2>Residence</h2> <p>PK</p>
+                </span>
+                <span>
+                  <h2>Phone</h2> <p>+92-xxx-xxxxxxx</p>
+                </span>
+                <span>
+                  <h2>Freelance</h2> <p>Available</p>
+                </span>
+                <AboutSectionContentIconsTextStyles>
+                  <AboutSectionContentIconsLinkStyles
+                    href="https://facebook.com/FarasatAliAzeemi/"
+                    target="_new"
+                  >
+                    <FacebookIcon />
+                  </AboutSectionContentIconsLinkStyles>
+                  <AboutSectionContentIconsLinkStyles
+                    href="https://www.linkedin.com/in/faraasat/"
+                    target="_new"
+                  >
+                    <LinkedInIcon />
+                  </AboutSectionContentIconsLinkStyles>
+                  <AboutSectionContentIconsLinkStyles
+                    href="https://github.com/faraasat"
+                    target="_new"
+                  >
+                    <GitHubIcon />
+                  </AboutSectionContentIconsLinkStyles>
+                  <AboutSectionContentIconsLinkStyles
+                    href="https://www.instagram.com/farasat_ali_azeemi/"
+                    target="_new"
+                  >
+                    <InstagramIcon />
+                  </AboutSectionContentIconsLinkStyles>
+                  <AboutSectionContentIconsLinkStyles
+                    href="https://t.me/farasat_azeemi/"
+                    target="_new"
+                  >
+                    <TelegramIcon />
+                  </AboutSectionContentIconsLinkStyles>
+                  <AboutSectionContentIconsLinkStyles
+                    href="https://wa.link/7xeqob"
+                    target="_new"
+                  >
+                    <WhatsAppIcon />
+                  </AboutSectionContentIconsLinkStyles>
+                </AboutSectionContentIconsTextStyles>
               </AboutSectionContentDetailsPersonalStyles>
             </AboutSectionContentDetailsStyles>
           </AboutSectionContentImgStyles>
