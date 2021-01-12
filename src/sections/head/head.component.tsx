@@ -22,6 +22,7 @@ import {
   HeadSectionParticleAlignmentStyles,
   HeadSectionBackgroundItemsImageImageStyles,
 } from "./head.style";
+import Jello from "react-reveal/Jello";
 
 export default function AboutSection() {
   return (
@@ -37,12 +38,14 @@ export default function AboutSection() {
                 src={Bg}
                 alt="background 2"
               />
-              <HeadSectionBackgroundItemsTypographyFirstStyles>
-                <HeadSectionBackgroundItemsTypographyFirstSubStyles>
-                  HELLO
-                </HeadSectionBackgroundItemsTypographyFirstSubStyles>{" "}
-                &nbsp;THERE!!!
-              </HeadSectionBackgroundItemsTypographyFirstStyles>
+              <Jello>
+                <HeadSectionBackgroundItemsTypographyFirstStyles>
+                  <HeadSectionBackgroundItemsTypographyFirstSubStyles>
+                    HELLO
+                  </HeadSectionBackgroundItemsTypographyFirstSubStyles>{" "}
+                  &nbsp;THERE EVERYONE, I AM
+                </HeadSectionBackgroundItemsTypographyFirstStyles>
+              </Jello>
               <HeadSectionBackgroundItemsTypographySecondStyles>
                 Mr. Farasat Ali
               </HeadSectionBackgroundItemsTypographySecondStyles>

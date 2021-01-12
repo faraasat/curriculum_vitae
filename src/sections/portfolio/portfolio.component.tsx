@@ -1,6 +1,3 @@
-import "./portfolio.styles.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBootstrap,
   faCss3Alt,
@@ -27,100 +24,75 @@ import { ReactComponent as Linux } from "../../assets/linux.svg";
 import { ReactComponent as Postgre } from "../../assets/postgre.svg";
 import { ReactComponent as Graphql } from "../../assets/graphql.svg";
 import { ReactComponent as MsSql } from "../../assets/mssql.svg";
-import { Icon } from "@material-ui/core";
+import {
+  PortfolioSkillIconBootstrapStyles,
+  PortfolioSkillIconCssStyles,
+  PortfolioSkillIconDockerStyles,
+  PortfolioSkillIconGitStyles,
+  PortfolioSkillIconHtmlStyles,
+  PortfolioSkillIconJavaStyles,
+  PortfolioSkillIconJsStyles,
+  PortfolioSkillIconNodeStyles,
+  PortfolioSkillIconPythonStyles,
+  PortfolioSkillIconReactStyles,
+  PortfolioSkillIconReduxStyles,
+  PortfolioSkillIconRustStyles,
+  PortfolioSkillIconSassStyles,
+  PortfolioSkillsAlignmentStyles,
+  PortfolioSkillsBackgroundStyles,
+  PortfolioSkillsContainerAlignmentStyles,
+  PortfolioSkillsContainerStyles,
+  PortfolioSkillIconTsStyles,
+  PortfolioSkillIconGatsbyStyles,
+  PortfolioSkillIconGraphqlStyles,
+  PortfolioSkillIconKubeStyles,
+  PortfolioSkillIconAspStyles,
+  PortfolioSkillIconCppStyles,
+  PortfolioSkillIconCLangStyles,
+  PortfolioSkillIconCsStyles,
+  PortfolioSkillIconLinuxStyles,
+  PortfolioSkillIconPostgreStyles,
+  PortfolioSkillIconMsSqlStyles,
+} from "./portfolio.styles";
+import Bounce from "react-reveal/Bounce";
 
 const PortfolioComponent = () => {
   return (
     <div>
-      <div className="portfolio-skills-background">
-        <div className="portfolio-skills-alignment">
-          <div className="portfolio-skills-container">
-            <div className="portfolio-skills-container__alignment">
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__html"
-                icon={faHtml5}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__css"
-                icon={faCss3Alt}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__sass"
-                icon={faSass}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__bootstrap"
-                icon={faBootstrap}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__js"
-                icon={faJs}
-              />
-              <Icon
-                component={TypeScript}
-                className="portfolio-skills-icon__ts"
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__react"
-                icon={faReact}
-              />
-              <Icon
-                component={Redux}
-                className="portfolio-skills-icon__redux"
-              />
-              <Icon
-                component={Gatsby}
-                className="portfolio-skills-icon__gatsby"
-              />
-              <Icon
-                component={Graphql}
-                className="portfolio-skills-icon__graphql"
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__node"
-                icon={faNode}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__docker"
-                icon={faDocker}
-              />
-              <Icon component={Kube} className="portfolio-skills-icon__kube" />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__git"
-                icon={faGitAlt}
-              />
-              <Icon component={Asp} className="portfolio-skills-icon__asp" />
-              <Icon component={CLang} className="portfolio-skills-icon__c" />
-              <Icon component={CPP} className="portfolio-skills-icon__cpp" />
-              <Icon component={CS} className="portfolio-skills-icon__cs" />
-              <Icon
-                component={Linux}
-                className="portfolio-skills-icon__linux"
-              />
-              <Icon
-                component={Postgre}
-                className="portfolio-skills-icon__postgre"
-              />
-              <Icon
-                component={MsSql}
-                className="portfolio-skills-icon__mssql"
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__java"
-                icon={faJava}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__python"
-                icon={faPython}
-              />
-              <FontAwesomeIcon
-                className="portfolio-skills-icons portfolio-skills-icon__rust"
-                icon={faRust}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <PortfolioSkillsBackgroundStyles>
+        <PortfolioSkillsAlignmentStyles>
+          <PortfolioSkillsContainerStyles>
+            <PortfolioSkillsContainerAlignmentStyles>
+              <Bounce right>
+                <PortfolioSkillIconHtmlStyles icon={faHtml5} />
+                <PortfolioSkillIconCssStyles icon={faCss3Alt} />
+                <PortfolioSkillIconSassStyles icon={faSass} />
+                <PortfolioSkillIconBootstrapStyles icon={faBootstrap} />
+                <PortfolioSkillIconJsStyles icon={faJs} />
+                <PortfolioSkillIconTsStyles component={TypeScript} />
+                <PortfolioSkillIconReactStyles icon={faReact} />
+                <PortfolioSkillIconReduxStyles component={Redux} />
+                <PortfolioSkillIconGatsbyStyles component={Gatsby} />
+                <PortfolioSkillIconGraphqlStyles component={Graphql} />
+                <PortfolioSkillIconNodeStyles icon={faNode} />
+                <PortfolioSkillIconDockerStyles icon={faDocker} />
+                <PortfolioSkillIconKubeStyles component={Kube} />
+                <PortfolioSkillIconGitStyles icon={faGitAlt} />
+                <PortfolioSkillIconAspStyles component={Asp} />
+                <PortfolioSkillIconCLangStyles component={CLang} />
+                <PortfolioSkillIconCppStyles component={CPP} />
+                <PortfolioSkillIconCsStyles component={CS} />
+                <PortfolioSkillIconLinuxStyles component={Linux} />
+                <PortfolioSkillIconPostgreStyles component={Postgre} />
+                <PortfolioSkillIconMsSqlStyles component={MsSql} />
+                <PortfolioSkillIconJavaStyles icon={faJava} />
+                <PortfolioSkillIconPythonStyles icon={faPython} />
+                <PortfolioSkillIconRustStyles icon={faRust} />
+              </Bounce>
+            </PortfolioSkillsContainerAlignmentStyles>
+          </PortfolioSkillsContainerStyles>
+        </PortfolioSkillsAlignmentStyles>
+      </PortfolioSkillsBackgroundStyles>
     </div>
   );
 };

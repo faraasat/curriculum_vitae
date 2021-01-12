@@ -16,7 +16,7 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
     position: absolute;
     border-radius: 50%;
     z-index: 20;
-    transform: translate(283px, -77.2px);
+    transform: translate(282.9px, -77.1px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;

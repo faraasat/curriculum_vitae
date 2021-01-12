@@ -12,7 +12,7 @@ export const EducationSectionAlignmentStyles = styled.section`
 export const EducationSectionBackgroundStyles = styled.div`
   user-select: none;
   position: absolute;
-  top: 920px;
+  top: 1720px;
   left: 100px;
   z-index: -5;
 `;
@@ -54,6 +54,11 @@ export const EducationSectionContainerStyles = styled.div`
 
 export const EducationSectionHeadingStyles = styled.div`
   margin-top: 30px;
+
+  & b {
+    font-size: 65px;
+    padding-left: 15px;
+  }
 
   &:hover {
     animation: rubberBand 1s ease-in;

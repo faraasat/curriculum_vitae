@@ -11,7 +11,7 @@ export const CvAppHeaderAlignmentStyles = styled.section`
 export const CvAppBodyAlignmentStyles = styled.section`
   box-sizing: border-box;
   display: inline-block;
-  max-width: 100%;
-  min-width: 100%;
+  max-width: 93.5%;
+  min-width: 93.5%;
   margin-left: 100px !important;
 `;

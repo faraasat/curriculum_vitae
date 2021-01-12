@@ -30,6 +30,7 @@ export default function AboutSection() {
                 { 1: "n", 2: "", 3: "", 4: "" },
               ]}
             />
+            <b>📚</b>
           </EducationSectionHeadingStyles>
           <EducationSectionContentLineStyles />
           <EducationSectionContentStyles>

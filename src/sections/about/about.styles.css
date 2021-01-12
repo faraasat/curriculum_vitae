@@ -1,154 +1,49 @@
-.about-section-particle-alignment {
-  box-sizing: border-box;
-  position: relative;
-  width: 110vw;
-  min-height: auto !important;
-  z-index: -10;
-}
-
-.about-section-particle-alignment > * {
-  height: 920px;
-}
-
-.about-section-background {
-  position: absolute;
-  top: 0;
-  margin: 40px 0px 0px 40px;
-  z-index: 1;
-}
-
-.about-section-background__container {
-  height: 830px;
-  margin-bottom: 60px;
-  min-width: 87vw;
-  background-color: rgba(255, 255, 255, 0.603);
-}
-
-.about-section-background__items {
+.about-section-alignment {
   width: 100%;
-  height: 100%;
+  height: 800px;
+  background-color: rgb(240, 240, 240);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.about-section-background__items-image__image {
-  transform: translateY(-45px);
-  height: 900px !important;
-  width: 850px !important;
-  padding: 0;
-  margin-block: 0;
-  animation: aboutImg 30s infinite linear;
-  animation-fill-mode: none;
-}
+.about-section-heading-typography:hover {
+  animation: rubberBand 1s ease-in;
 
-.about-section-background__items-image__container {
-  position: relative;
-  top: 0px;
-  transform: translateX(50px);
-}
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
 
-@keyframes aboutImg {
-  0% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  20% {
-    transform: translateY(-30px);
-    opacity: 0.7;
-  }
-  60% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateY(30px);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+    }
   }
 }
 
-.about-section-background__items-typography {
-  min-width: 40%;
-  transform: translateX(140px);
-}
-
-.about-section-background__items-typography__image {
-  position: absolute;
-  z-index: -5;
-  width: 1000px;
-  transform: translate(-20px, -270px);
-  opacity: 0.65;
-}
-
-.about-section-background__items-typography__first {
-  color: #ff0015;
-  font-size: 25px;
-  font-weight: bolder;
-  transform: translateX(25px);
-}
-
-.about-section-background__items-typography__first__sub {
-  color: #ffffff !important;
-  font-size: 26px;
-}
-
-.about-section-background__items-typography__first::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
-  width: 143px;
-  height: 40px;
-  background: #ffc455;
-  transform: translate(-25px, -2.5px);
-  z-index: -1;
-}
-
-.about-section-background__items-typography__second {
-  margin-top: 13px;
-  font-family: "Polya", cursive;
-  color: #00b7ff !important;
-  font-size: 3.65vw;
-  font-weight: 400;
-}
-
-.about-section-background__items-typography__typed {
-  border-left: 9px solid #129ddd;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-top: 2px;
-  font-size: 25px;
+.about-section-heading-typography b {
+  z-index: 20;
   padding-left: 15px;
-  color: #ff00b3;
-}
-
-.about-section-background__items-typography__btn-group {
-  margin-top: 40px;
-}
-
-.about-section-background__items-typography__btn-1 {
-  background: rgb(255, 174, 0) !important;
-  font-size: 20px !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.about-section-background__items-typography__btn-1:hover {
-  background: rgb(0, 195, 255) !important;
-  box-shadow: 0px 1px 20px 5px rgba(255, 174, 0, 0.3) !important;
-}
-
-.about-section-background__items-typography__btn-2 {
-  background: rgb(0, 195, 255) !important;
-  font-size: 20px !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.about-section-background__items-typography__btn-2:hover {
-  background: rgb(255, 174, 0) !important;
-  box-shadow: 0px 1px 20px 5px rgba(0, 195, 255, 0.3) !important;
+  font-size: 75px;
 }

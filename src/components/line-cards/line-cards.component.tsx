@@ -19,6 +19,8 @@ import {
   LineCardItemsRightBoxTagRightTitleStyles,
   LineCardItemsRightBoxTagStyles,
 } from "./line-cards.styles";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 export const LineCardLeftComponent: React.FC<ILineCard> = ({
   year1,
@@ -31,33 +33,39 @@ export const LineCardLeftComponent: React.FC<ILineCard> = ({
 }) => {
   return (
     <LineCardItemsLeftStyles>
-      <LineCardItemsLeftRoundYearStyles color={color}>
-        <h1>
-          <span>
-            {year1}
-            <br />
-            to
-            <br />
-            {year2}
-          </span>
-        </h1>
-      </LineCardItemsLeftRoundYearStyles>
-      <LineCardItemsLeftBoxStyles>
-        <LineCardItemsLeftBoxTagStyles>
-          <LineCardItemsLeftBoxTagBoxStyles>
-            <LineCardItemsLeftBoxTagLeftTitleStyles>
-              <h1>{number}</h1>
-            </LineCardItemsLeftBoxTagLeftTitleStyles>
-            <LineCardItemsLeftBoxTagRightTitleStyles color={color}>
-              <h1>{heading}</h1>
-            </LineCardItemsLeftBoxTagRightTitleStyles>
-          </LineCardItemsLeftBoxTagBoxStyles>
-        </LineCardItemsLeftBoxTagStyles>
-        <LineCardItemsLeftBoxInfoStyles color={color}>
-          {skill}
-        </LineCardItemsLeftBoxInfoStyles>
-        <LineCardItemsLeftBoxParaStyles>{text}</LineCardItemsLeftBoxParaStyles>
-      </LineCardItemsLeftBoxStyles>
+      <Fade left>
+        <LineCardItemsLeftRoundYearStyles color={color}>
+          <h1>
+            <span>
+              {year1}
+              <br />
+              to
+              <br />
+              {year2}
+            </span>
+          </h1>
+        </LineCardItemsLeftRoundYearStyles>
+      </Fade>
+      <Fade right>
+        <LineCardItemsLeftBoxStyles>
+          <LineCardItemsLeftBoxTagStyles>
+            <LineCardItemsLeftBoxTagBoxStyles>
+              <LineCardItemsLeftBoxTagLeftTitleStyles>
+                <h1>{number}</h1>
+              </LineCardItemsLeftBoxTagLeftTitleStyles>
+              <LineCardItemsLeftBoxTagRightTitleStyles color={color}>
+                <h1>{heading}</h1>
+              </LineCardItemsLeftBoxTagRightTitleStyles>
+            </LineCardItemsLeftBoxTagBoxStyles>
+          </LineCardItemsLeftBoxTagStyles>
+          <LineCardItemsLeftBoxInfoStyles color={color}>
+            {skill}
+          </LineCardItemsLeftBoxInfoStyles>
+          <LineCardItemsLeftBoxParaStyles>
+            {text}
+          </LineCardItemsLeftBoxParaStyles>
+        </LineCardItemsLeftBoxStyles>
+      </Fade>
     </LineCardItemsLeftStyles>
   );
 };
@@ -73,35 +81,39 @@ export const LineCardRightComponent: React.FC<ILineCard> = ({
 }) => {
   return (
     <LineCardItemsRightStyles>
-      <LineCardItemsRightBoxStyles>
-        <LineCardItemsRightBoxTagStyles>
-          <LineCardItemsRightBoxTagBoxStyles>
-            <LineCardItemsRightBoxTagRightTitleStyles color={color}>
-              <h1>{heading}</h1>
-            </LineCardItemsRightBoxTagRightTitleStyles>
-            <LineCardItemsRightBoxTagLeftTitleStyles>
-              <h1>{number}</h1>
-            </LineCardItemsRightBoxTagLeftTitleStyles>
-          </LineCardItemsRightBoxTagBoxStyles>
-        </LineCardItemsRightBoxTagStyles>
-        <LineCardItemsRightBoxInfoStyles color={color}>
-          {skill}
-        </LineCardItemsRightBoxInfoStyles>
-        <LineCardItemsRightBoxParaStyles>
-          {text}
-        </LineCardItemsRightBoxParaStyles>
-      </LineCardItemsRightBoxStyles>
-      <LineCardItemsRightRoundYearStyles color={color}>
-        <h1>
-          <span>
-            {year1}
-            <br />
-            to
-            <br />
-            {year2}
-          </span>
-        </h1>
-      </LineCardItemsRightRoundYearStyles>
+      <Zoom left>
+        <LineCardItemsRightBoxStyles>
+          <LineCardItemsRightBoxTagStyles>
+            <LineCardItemsRightBoxTagBoxStyles>
+              <LineCardItemsRightBoxTagRightTitleStyles color={color}>
+                <h1>{heading}</h1>
+              </LineCardItemsRightBoxTagRightTitleStyles>
+              <LineCardItemsRightBoxTagLeftTitleStyles>
+                <h1>{number}</h1>
+              </LineCardItemsRightBoxTagLeftTitleStyles>
+            </LineCardItemsRightBoxTagBoxStyles>
+          </LineCardItemsRightBoxTagStyles>
+          <LineCardItemsRightBoxInfoStyles color={color}>
+            {skill}
+          </LineCardItemsRightBoxInfoStyles>
+          <LineCardItemsRightBoxParaStyles>
+            {text}
+          </LineCardItemsRightBoxParaStyles>
+        </LineCardItemsRightBoxStyles>
+      </Zoom>
+      <Zoom right>
+        <LineCardItemsRightRoundYearStyles color={color}>
+          <h1>
+            <span>
+              {year1}
+              <br />
+              to
+              <br />
+              {year2}
+            </span>
+          </h1>
+        </LineCardItemsRightRoundYearStyles>
+      </Zoom>
     </LineCardItemsRightStyles>
   );
 };

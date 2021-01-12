@@ -49,7 +49,7 @@ export const HeadSectionBackgroundItemsTypographyImageStyles = styled.img`
 `;
 
 export const HeadSectionBackgroundItemsTypographyFirstStyles = styled.div`
-  color: #ff0015;
+  color: #00c020;
   font-size: 25px;
   font-weight: bolder;
   transform: translateX(25px);
@@ -61,7 +61,7 @@ export const HeadSectionBackgroundItemsTypographyFirstStyles = styled.div`
     bottom: 0;
     left: 0;
     margin: 0 auto;
-    width: 143px;
+    width: 243px;
     height: 40px;
     background: #ffc455;
     transform: translate(-25px, -2.5px);
