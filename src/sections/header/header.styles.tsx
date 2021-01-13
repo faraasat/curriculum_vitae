@@ -91,8 +91,9 @@ export const CvHeaderIconsStyles = styled.div`
 `;
 
 export const CvHeaderSocialStyles = styled.div`
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
+  margin-top: 30px;
   margin-top: 30px;
 `;
 

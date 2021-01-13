@@ -9,6 +9,7 @@ import {
   Header,
   Languages,
   Portfolio,
+  PortfolioShow,
 } from "./listing";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Education />
         <Languages />
+        <PortfolioShow />
         <Portfolio />
       </CvAppBodyAlignmentStyles>
     </div>

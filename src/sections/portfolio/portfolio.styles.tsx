@@ -30,7 +30,8 @@ export const PortfolioSkillsContainerStyles = styled.div`
   justify-content: space-evenly;
   word-wrap: wrap;
   width: 80%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 25px;
 `;
 
 export const PortfolioSkillsContainerAlignmentStyles = styled.div`

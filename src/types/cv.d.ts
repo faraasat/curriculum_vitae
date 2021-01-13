@@ -88,3 +88,17 @@ export interface ICircularProgressStyles {
 export interface ICircularTextStyles {
   color: string;
 }
+
+export interface IIconState {
+  iconState: boolean;
+}
+
+export interface IHoverScrollImage {
+  Img: any;
+}
+
+export interface IHoverScroll extends IHoverScrollImage {
+  url: string;
+  para: string;
+  heading: string;
+}

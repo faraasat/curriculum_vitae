@@ -69,6 +69,7 @@ export const AboutSectionContentContentStyles = styled.div`
 export const AboutSectionContentImgStyles = styled.div<IPanel>`
   position: relative;
   z-index: 1;
+
   &::after {
     content: "";
     position: absolute;
@@ -131,6 +132,7 @@ export const AboutSectionContentImgInfoIconStyles = styled.div`
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 20;
   }
 `;
 

@@ -18,7 +18,6 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.7",
-    "@wellyshen/use-web-animations": "^0.6.1",
     "cuid": "^2.1.8",
     "gh-pages": "^3.1.0",
     "react": "^17.0.1",
