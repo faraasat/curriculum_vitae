@@ -1,7 +1,7 @@
 import ProfileImg from "../../assets/profile-image.png";
 import LogoComponent from "../../components/logo/logo.component";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
-import LocalMallIcon from "@material-ui/icons/LocalMall";
+import SchoolIcon from "@material-ui/icons/School";
 import SpeakerNotesIcon from "@material-ui/icons/SpeakerNotes";
 import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 import HeaderIconStyledComponent from "../../components/header-icon-styled/header-icon-styled.component";
@@ -34,6 +34,21 @@ export default function AboutSection() {
     section!.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToEducation = () => {
+    const section = document.querySelector("#education-section-scroll");
+    section!.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToPortfolio = () => {
+    const section = document.querySelector("#portfolio-section-scroll");
+    section!.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContact = () => {
+    const section = document.querySelector("#contact-section-scroll");
+    section!.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <CvHeaderStyles>
       <CvHeaderImageStyles>
@@ -49,23 +64,26 @@ export default function AboutSection() {
         <HeaderIconStyledComponent
           onClick={scrollToAbout}
           Icon={EqualizerIcon}
-          color={"rgba(255, 0, 0, 0.65)"}
+          color={"rgba(255, 0, 212, 0.65)"}
           text={"About"}
         />
         <hr />
         <HeaderIconStyledComponent
-          Icon={LocalMallIcon}
+          onClick={scrollToEducation}
+          Icon={SchoolIcon}
           color={"rgba(0, 81, 255, 0.65)"}
+          text={"Education"}
+        />
+        <hr />
+        <HeaderIconStyledComponent
+          onClick={scrollToPortfolio}
+          Icon={SpeakerNotesIcon}
+          color={"rgba(255, 123, 0, 0.65)"}
           text={"Portfolio"}
         />
         <hr />
         <HeaderIconStyledComponent
-          Icon={SpeakerNotesIcon}
-          color={"rgba(255, 123, 0, 0.65)"}
-          text={"Testimonial"}
-        />
-        <hr />
-        <HeaderIconStyledComponent
+          onClick={scrollToContact}
           Icon={ContactSupportIcon}
           color={"rgba(0, 255, 34, 0.65)"}
           text={"Contact"}

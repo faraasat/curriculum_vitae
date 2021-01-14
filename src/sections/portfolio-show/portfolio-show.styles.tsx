@@ -2,7 +2,8 @@ import styled from "styled-components";
 import Portfolio from "../../assets/portfolio.jpg";
 
 export const PortfolioShowAlignmentStyles = styled.section`
-  height: 900px;
+position: relative;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,10 +17,12 @@ export const PortfolioShowAlignmentStyles = styled.section`
 `;
 
 export const PortfolioShowTypoStyles = styled.div`
+  position: relative;
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 
   & b {
     font-size: 65px;
@@ -64,6 +67,7 @@ export const PortfolioShowTypoStyles = styled.div`
 `;
 
 export const PortfolioShowContainerStyles = styled.div`
+  position: relative;
   width: 89%;
   margin-top: 20px;
   display: flex;
@@ -75,8 +79,10 @@ export const PortfolioShowContainerStyles = styled.div`
 export const PortfolioShowImgAlignmentStyles = styled.div`
   user-select: none;
   position: absolute;
-  top: 3845.5px;
-  left: 100px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   z-index: -20;
 `;
 
@@ -86,8 +92,8 @@ export const PortfolioShowImgStyles = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 93vw;
-  height: 900px !important;
+  width: 100%;
+  height: 100% !important;
 `;
 
 export const PortfolioShowBtnStyles = styled.a`
@@ -124,4 +130,5 @@ export const PortfolioShowBtnStyles = styled.a`
 
 export const PortfolioShowBtnContainer = styled.span`
   margin-top: 30px;
+  margin-bottom: 90px;
 `;

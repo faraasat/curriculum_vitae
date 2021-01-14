@@ -61,11 +61,10 @@ export const HoverScrollFooterStyles = styled.span`
 
 export const HoverScrollBtnStyles = styled.a`
   text-decoration: none;
-  padding: 8px 15px;
+  padding: 8px 18px;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: bolder;
-  padding-right: 17px;
   background-image: linear-gradient(
     to right,
     #314755 0%,

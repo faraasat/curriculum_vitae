@@ -18,10 +18,63 @@ export const PortfolioSkillsBackgroundStyles = styled.section`
 `;
 
 export const PortfolioSkillsAlignmentStyles = styled.div`
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const PortfolioSkillsTypoStyles = styled.div`
+  padding: 15px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    text-shadow-color: green;
+  }
+
+  & b { 
+    font-size: 65px;
+    padding-left: 20px;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:hover b {
+    animation: rubberBand 1s ease-in;
+  }
+
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 `;
 
 export const PortfolioSkillsContainerStyles = styled.div`

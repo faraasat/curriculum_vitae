@@ -18,7 +18,7 @@ export default function AboutSection() {
   return (
     <EducationSectionAlignmentStyles>
       <EducationSectionBackgroundStyles>
-        <EducationSectionBackgroundImageStyles />
+        <EducationSectionBackgroundImageStyles id="education-section-scroll" />
       </EducationSectionBackgroundStyles>
       <EducationSectionContainerBackgroundStyles>
         <EducationSectionContainerStyles>

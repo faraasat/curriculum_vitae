@@ -19,7 +19,7 @@ const PortfolioShowComponent = () => {
   return (
     <PortfolioShowAlignmentStyles>
       <PortfolioShowImgAlignmentStyles>
-        <PortfolioShowImgStyles />
+        <PortfolioShowImgStyles id="portfolio-section-scroll" />
       </PortfolioShowImgAlignmentStyles>
       <PortfolioShowTypoStyles>
         <TypographyStyleTextPattern

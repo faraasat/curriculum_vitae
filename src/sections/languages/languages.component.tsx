@@ -14,7 +14,7 @@ export default function AboutSection() {
   return (
     <LanguageSectionAlignmentStyles>
       <LanguageSectionTypoStyles>
-        <TypographyStyleTextPattern
+      <TypographyStyleTextPattern
           text={[
             { 1: "L", 2: "a", 3: "n", 4: "g" },
             { 1: "u", 2: "a", 3: "g", 4: "e" },

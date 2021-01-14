@@ -53,12 +53,24 @@ import {
   PortfolioSkillIconLinuxStyles,
   PortfolioSkillIconPostgreStyles,
   PortfolioSkillIconMsSqlStyles,
+  PortfolioSkillsTypoStyles,
 } from "./portfolio.styles";
 import Bounce from "react-reveal/Bounce";
+import { TypographyStyleTextPattern } from "../../components/typography/typography.component";
 
 const PortfolioComponent = () => {
   return (
     <PortfolioSkillsBackgroundStyles>
+      <PortfolioSkillsTypoStyles>
+        <TypographyStyleTextPattern
+          text={[
+            { 1: "T", 2: "e", 3: "c", 4: "h" },
+            { 1: "-", 2: "S", 3: "t", 4: "a" },
+            { 1: "c", 2: "k", 3: "", 4: "" },
+          ]}
+        />
+        <b>🔥</b>
+      </PortfolioSkillsTypoStyles>
       <PortfolioSkillsAlignmentStyles>
         <PortfolioSkillsContainerStyles>
           <PortfolioSkillsContainerAlignmentStyles>

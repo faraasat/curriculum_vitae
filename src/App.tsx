@@ -4,6 +4,7 @@ import {
 } from "./App.style";
 import {
   About,
+  Contact,
   Education,
   Head,
   Header,
@@ -25,6 +26,7 @@ function App() {
         <Languages />
         <PortfolioShow />
         <Portfolio />
+        <Contact />
       </CvAppBodyAlignmentStyles>
     </div>
   );

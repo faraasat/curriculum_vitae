@@ -2,6 +2,7 @@ import styled from "styled-components";
 import myImage from "../../assets/education.svg";
 
 export const EducationSectionAlignmentStyles = styled.section`
+  position: relative;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -12,8 +13,10 @@ export const EducationSectionAlignmentStyles = styled.section`
 export const EducationSectionBackgroundStyles = styled.div`
   user-select: none;
   position: absolute;
-  top: 1700px;
-  left: 100px;
+  top: 0;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
   z-index: -5;
 `;
 
@@ -23,9 +26,8 @@ export const EducationSectionBackgroundImageStyles = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 93vw;
-  height: 1668px !important;
-  height: auto;
+  width: 100%;
+  height: 100% !important;
   opacity: 0.3;
 `;
 

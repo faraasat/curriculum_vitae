@@ -9,7 +9,7 @@ const TypographyTextStyling = `
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 7px 7px 0px #d2d2d22e;
+  text-shadow: 7px 7px 0px rgba(219, 219, 219, 0.18);
 `;
 
 export const TypographyTextStyling1 = styled.div`
