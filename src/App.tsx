@@ -5,7 +5,9 @@ import {
 import {
   About,
   Contact,
+  Copyright,
   Education,
+  Footer,
   Head,
   Header,
   Languages,
@@ -27,6 +29,8 @@ function App() {
         <PortfolioShow />
         <Portfolio />
         <Contact />
+        <Footer />
+        <Copyright />
       </CvAppBodyAlignmentStyles>
     </div>
   );

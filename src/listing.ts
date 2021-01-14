@@ -6,3 +6,5 @@ export { default as Languages } from "./sections/languages/languages.component";
 export { default as PortfolioShow } from "./sections/portfolio-show/portfolio-show.component";
 export { default as Portfolio } from "./sections/portfolio/portfolio.component";
 export { default as Contact } from "./sections/contact/contact.component";
+export { default as Footer } from "./sections/footer/footer.component";
+export { default as Copyright } from "./sections/copyright/copyright.component";
