@@ -32,6 +32,14 @@ export const LanguageSectionContainerStyles = styled.div`
   & .languages-section-content__2 .circular-progress-access-class {
     transform: translate(-108px, 50px) !important;
   }
+
+  @media only screen and (max-width: 700px) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 510px) {
+    width: 99%;
+  }
 `;
 
 export const LanguageSectionAlignmentStyles = styled.section`
@@ -91,6 +99,27 @@ export const LanguageSectionTypoStyles = styled.div`
 
     to {
       transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+      margin-bottom: 10px;
+    & * {
+      font-size: 10vw !important;
+    }
+
+    & b {
+      font-size: 27px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    & * {
+      font-size: 12.2vw !important;
+    }
+
+    & b {
+      font-size: 33px;
     }
   }
 `;

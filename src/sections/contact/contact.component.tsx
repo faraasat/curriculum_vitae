@@ -44,7 +44,7 @@ export default function AboutSection() {
             containerClassName="map"
             map={"world_mill"}
             zoomOnScroll={true}
-            zoomButtons={true}
+            zoomButtons={false}
             regionStyle={{
               initial: {
                 fill: "rgb(255, 255, 255)",

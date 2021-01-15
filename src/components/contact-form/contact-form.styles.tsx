@@ -46,11 +46,34 @@ export const ContactFormFormAlignmentStyles = styled.div`
 export const ContactFormLineAlignmentStyles = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+
+  & > :nth-child(1) {
+      margin-right: 9px;
+      width: 44%;
+    }
+
+    & > :nth-child(2) {
+      width: 44%;
+    }
 
   &:not(:first-child) {
     margin-top: 17px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+
+    & > :nth-child(1) {
+      margin-right: 0px;
+      width: 90%;
+    }
+
+    & > :nth-child(2) {
+      margin-top: 17px;
+      width: 90%;
+    }
   }
 `;
 
@@ -58,7 +81,7 @@ export const ContactFormTextBoxAlignmentStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 85%;
+  width: 91%;
   margin: 17px 0px 0px 0px;
 
   & > * {

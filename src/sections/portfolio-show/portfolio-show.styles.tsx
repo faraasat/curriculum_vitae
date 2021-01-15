@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Portfolio from "../../assets/portfolio.jpg";
 
 export const PortfolioShowAlignmentStyles = styled.section`
-position: relative;
+  position: relative;
   height: auto;
   width: 100%;
   display: flex;
@@ -64,11 +64,32 @@ export const PortfolioShowTypoStyles = styled.div`
       transform: scale3d(1, 1, 1);
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 10px;
+    & * {
+      font-size: 12.5vw !important;
+    }
+
+    & b {
+      font-size: 27px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    & * {
+      font-size: 14vw !important;
+    }
+
+    & b {
+      font-size: 30px;
+    }
+  }
 `;
 
 export const PortfolioShowContainerStyles = styled.div`
   position: relative;
-  width: 89%;
+  width: 95%;
   margin-top: 20px;
   display: flex;
   align-items: center;

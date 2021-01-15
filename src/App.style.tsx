@@ -10,7 +10,7 @@ export const CvAppHeaderAlignmentStyles = styled.section`
   height: auto !important;
   height: 100vh;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 590px) {
     display: none;
   }
 `;
@@ -22,7 +22,7 @@ export const CvAppBodyAlignmentStyles = styled.section`
   max-width: calc(100vw - 100px);
   margin-left: 100px !important;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 590px) {
     margin-left: 0px !important;
     min-width: 100vw;
     max-width: 100vw;

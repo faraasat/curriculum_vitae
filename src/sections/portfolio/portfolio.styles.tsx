@@ -7,6 +7,10 @@ const fontIconCss = `
     cursor: pointer;
     color: grey;
     margin: 0px 20px;
+
+    @media only screen and (max-width: 1235px) {
+      font-size: 55px;
+      }
 `;
 
 const fontIconCssHover = `
@@ -30,12 +34,8 @@ export const PortfolioSkillsTypoStyles = styled.div`
   align-items: center;
   justify-content: center;
 
-  & > * {
-    text-shadow-color: green;
-  }
-
-  & b { 
-    font-size: 65px;
+  & b {
+    font-size: 75px;
     padding-left: 20px;
     transform: translateY(-10px);
     cursor: pointer;
@@ -75,6 +75,39 @@ export const PortfolioSkillsTypoStyles = styled.div`
       transform: scale3d(1, 1, 1);
     }
   }
+
+  @media only screen and (max-width: 850px) {
+    margin-bottom: 10px;
+    & * {
+      font-size: 11.2vw !important;
+    }
+
+    & b {
+      font-size: 25px;
+      padding-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    & * {
+      font-size: 11vw !important;
+    }
+
+    & b {
+      font-size: 22px;
+      padding-left: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    & * {
+      font-size: 12.5vw !important;
+    }
+
+    & b {
+      font-size: 26px;
+    }
+  }
 `;
 
 export const PortfolioSkillsContainerStyles = styled.div`
@@ -85,6 +118,19 @@ export const PortfolioSkillsContainerStyles = styled.div`
   width: 80%;
   margin-bottom: 20px;
   margin-top: 25px;
+
+  @media only screen and (max-width: 1425px) {
+    width: 85%;
+  }
+
+  @media only screen and (max-width: 1235px) {
+    margin-top: 5px;
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    width: 95%;
+  }
 `;
 
 export const PortfolioSkillsContainerAlignmentStyles = styled.div`
@@ -161,6 +207,10 @@ export const PortfolioSkillIconTsStyles = styled(Icon)<any>`
     fill: blue !important;
     transform: scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconReactStyles = styled(FontAwesomeIcon)`
   ${css`
@@ -184,6 +234,10 @@ export const PortfolioSkillIconReduxStyles = styled(Icon)<any>`
     fill: purple !important;
     transform: scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconGatsbyStyles = styled(Icon)<any>`
   width: 70px !important;
@@ -196,6 +250,10 @@ export const PortfolioSkillIconGatsbyStyles = styled(Icon)<any>`
     fill: purple !important;
     transform: scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconGraphqlStyles = styled(Icon)<any>`
   width: 75px !important;
@@ -207,6 +265,10 @@ export const PortfolioSkillIconGraphqlStyles = styled(Icon)<any>`
   &:hover {
     fill: palevioletred !important;
     transform: scale(1.05);
+  }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
   }
 `;
 export const PortfolioSkillIconNodeStyles = styled(FontAwesomeIcon)`
@@ -242,6 +304,10 @@ export const PortfolioSkillIconKubeStyles = styled(Icon)<any>`
     fill: blue !important;
     transform: scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconGitStyles = styled(FontAwesomeIcon)`
   ${css`
@@ -266,6 +332,10 @@ export const PortfolioSkillIconAspStyles = styled(Icon)<any>`
     fill: blue !important;
     transform: translateY(5px) scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconCLangStyles = styled(Icon)<any>`
   width: 70px !important;
@@ -278,6 +348,10 @@ export const PortfolioSkillIconCLangStyles = styled(Icon)<any>`
   &:hover {
     fill: rgb(46, 95, 255) !important;
     transform: translateY(5px) scale(1.05);
+  }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
   }
 `;
 export const PortfolioSkillIconCppStyles = styled(Icon)<any>`
@@ -292,6 +366,10 @@ export const PortfolioSkillIconCppStyles = styled(Icon)<any>`
     fill: rgb(46, 95, 255) !important;
     transform: translateY(5px) scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconCsStyles = styled(Icon)<any>`
   width: 70px !important;
@@ -304,6 +382,10 @@ export const PortfolioSkillIconCsStyles = styled(Icon)<any>`
   &:hover {
     fill: purple !important;
     transform: translateY(5px) scale(1.05);
+  }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
   }
 `;
 export const PortfolioSkillIconLinuxStyles = styled(Icon)<any>`
@@ -318,6 +400,10 @@ export const PortfolioSkillIconLinuxStyles = styled(Icon)<any>`
     fill: yellow !important;
     transform: translateY(5px) scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconPostgreStyles = styled(Icon)<any>`
   width: 70px !important;
@@ -331,6 +417,10 @@ export const PortfolioSkillIconPostgreStyles = styled(Icon)<any>`
     fill: blue !important;
     transform: translateY(5px) scale(1.05);
   }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
+  }
 `;
 export const PortfolioSkillIconMsSqlStyles = styled(Icon)<any>`
   width: 90px !important;
@@ -342,6 +432,10 @@ export const PortfolioSkillIconMsSqlStyles = styled(Icon)<any>`
   &:hover {
     fill: red !important;
     transform: scale(1.05);
+  }
+
+  @media only screen and (max-width: 1235px) {
+    width: 60px !important;
   }
 `;
 export const PortfolioSkillIconJavaStyles = styled(FontAwesomeIcon)`

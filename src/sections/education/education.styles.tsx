@@ -58,7 +58,7 @@ export const EducationSectionHeadingStyles = styled.div`
   margin-top: 30px;
 
   & b {
-    font-size: 65px;
+    font-size: 80px;
     padding-left: 15px;
     cursor: pointer;
   }
@@ -100,34 +100,22 @@ export const EducationSectionHeadingStyles = styled.div`
 
   @media only screen and (max-width: 800px) {
     & * {
-      font-size: 10vw !important;
+      font-size: 11vw !important;
     }
 
     & b {
-      font-size: 27px;
+      font-size: 25px;
+    padding-left: 10px;
     }
   }
 
   @media only screen and (max-width: 590px) {
     & * {
-      font-size: 10vw !important;
+      font-size: 13.3vw !important;
     }
 
     & b {
-      font-size: 30px;
-    }
-  }
-
-  @media only screen and (max-width: 510px) {
-    & * {
-      font-size: 10vw !important;
-      margin-top: 35px;
-    }
-
-    & b {
-      padding-left: 5px;
-      padding-right: 2px;
-      font-size: 30px;
+    padding-left: 5px;
     }
   }
 `;

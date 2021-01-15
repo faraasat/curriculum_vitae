@@ -72,33 +72,23 @@ export const AboutSectionHeadingTypographyStyles = styled.div`
 
   @media only screen and (max-width: 760px) {
     & #about-section-scroll span div {
-      font-size: 60px !important;
+      font-size: 11.87vw !important;
       margin-top: 40px;
     }
 
     & b {
-      cursor: pointer;
-      padding-left: 15px;
-      font-size: 45px;
+      font-size: 70px;
     }
   }
 
   @media only screen and (max-width: 590px) {
     & #about-section-scroll span div {
-      margin-top: 35px;
-    }
-  }
-
-  @media only screen and (max-width: 510px) {
-    & #about-section-scroll span div {
-      font-size: 45px !important;
+      font-size: 13.99vw !important;
       margin-top: 35px;
     }
 
     & b {
-      cursor: pointer;
-      padding-left: 15px;
-      font-size: 32px;
+      font-size: 60px;
     }
   }
 `;

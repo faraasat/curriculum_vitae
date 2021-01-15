@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { VectorMap } from "react-jvectormap";
-import Contact from '../../assets/contact-us.jpg'
+import Contact from "../../assets/contact-us.jpg";
 
 export const ContactSectionAlignmentStyles = styled.section`
   position: relative;
@@ -15,7 +15,7 @@ export const ContactSectionAlignmentStyles = styled.section`
     rgba(98, 50, 110, 0.7),
     rgba(104, 54, 62, 0.7)
   );
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 `;
 
 export const ContactSectionImgBackgroundStyles = styled.div`
@@ -44,16 +44,45 @@ export const ContactSectionBackgroundStyles = styled.div`
   width: 95%;
   height: 34vw;
   user-select: none;
-  /* transform: translateY(-197px); */
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 1130px) {
+    flex-direction: column-reverse;
+    margin-top: 250px;
+  }
+
+  @media only screen and (max-width: 775px) {
+    margin-top: 280px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    margin-top: 450px;
+  }
+
+  @media only screen and (max-width: 615px) {
+    margin-top: 465px;
+  }
+
+  @media only screen and (max-width: 590px) {
+    margin-top: 485px;
+  }
+
+  @media only screen and (max-width: 520px) {
+    margin-top: 500px;
+  }
 `;
 
 export const ContactSectionBackground2Styles = styled.div`
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   user-select: none;
+
+  @media only screen and (max-width: 1130px) {
+    height: 500px !important;
+    transform: translateY(215px);
+  }
 `;
 
 export const ContactSectionTypoContainerStyles = styled.div`
@@ -69,9 +98,10 @@ export const ContactSectionBackgroundImageStyles = styled(VectorMap)`
 
 export const ContactSectionHeadingStyles = styled.div`
   margin-top: 30px;
+  margin-bottom: 30px;
 
   & b {
-    font-size: 65px;
+    font-size: 80px;
     padding-left: 15px;
     cursor: pointer;
   }
@@ -110,11 +140,60 @@ export const ContactSectionHeadingStyles = styled.div`
       transform: scale3d(1, 1, 1);
     }
   }
+  @media only screen and (max-width: 850px) {
+    margin-bottom: 10px;
+    & * {
+      font-size: 11.2vw !important;
+    }
+
+    & b {
+      font-size: 25px;
+      padding-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    & * {
+      font-size: 11vw !important;
+    }
+
+    & b {
+      font-size: 22px;
+      padding-left: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    & * {
+      font-size: 12.5vw !important;
+    }
+
+    & b {
+      font-size: 26px;
+    }
+  }
 `;
 
 export const ContactSectionContactFormStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 950px !important;
+
+  @media only screen and (max-width: 1450px) {
+    width: 1000px !important;
+    z-index: 500;
+  }
+
+  @media only screen and (max-width: 1130px) {
+    width: 70% !important;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 85% !important;
+  }
+
+  @media only screen and (max-width: 770px) {
+    width: 95% !important;
+  }
 `;

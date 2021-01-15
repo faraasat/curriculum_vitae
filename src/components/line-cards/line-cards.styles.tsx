@@ -161,7 +161,7 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
         border-bottom: 15px solid transparent;
         border-top: 15px solid ${(props) => props.color};
         border-left: 13px solid transparent;
-        top: 135px;
+        top: 134px;
         transform: translate(0px, 0px);
       }
     }
@@ -452,7 +452,7 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
         border-bottom: 15px solid transparent;
         border-top: 15px solid ${(props) => props.color};
         border-left: 13px solid transparent;
-        top: 135px;
+        top: 134px;
         transform: translate(0px, 0px);
       }
     }
