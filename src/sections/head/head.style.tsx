@@ -10,6 +10,37 @@ export const HeadSectionAlignmentStyles = styled.section`
   align-items: center;
   height: 800px;
   justify-content: center;
+  /* background: linear-gradient(
+    150deg,
+    rgba(163, 255, 110, 0.5),
+    rgba(240, 255, 110, 0.5),
+    rgba(255, 216, 110, 0.5),
+    rgba(255, 163, 110, 0.5),
+    rgba(183, 248, 219, 0.5),
+    rgba(80, 167, 194, 0.5),
+    rgba(0, 174, 255, 0.5),
+    rgba(241, 132, 255, 0.5),
+    rgba(255, 112, 231, 0.5),
+    rgba(255, 158, 187, 0.5),
+    rgba(158, 255, 223, 0.5),
+    rgba(158, 255, 171, 0.5)
+  ) !important; */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  z-index: -10;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   @media only screen and (max-width: 1295px) {
     height: 600px;
@@ -411,99 +442,3 @@ export const HeadSectionImageImgStyles = styled.img`
     }
   }
 `;
-
-// export const HeadSectionAlignmentStyles = styled.section`
-//   box-sizing: border-box;
-//   position: relative;
-//   width: 100%;
-//   min-height: auto !important;
-//   z-index: 5;
-//   background-color: rgba(255, 255, 255, 0.603);
-// `;
-
-// export const HeadSectionBackgroundTopStyles = styled.div`
-//   user-select: none;
-//   position: absolute;
-//   top: 0;
-//   left: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   z-index: -5;
-// `;
-
-// export const HeadSectionBackgroundImageStyles = styled.div`
-//   background-image: url(${Bg});
-//   background-attachment: fixed;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 100%;
-//   height: 100% !important;
-//   opacity: 0.5;
-// `;
-
-// export const HeadSectionBackgroundItemsStyles = styled.div`
-//   z-index: 1;
-//   height: 720px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// export const HeadSectionBackgroundItemsContainerStyles = styled.div`
-//   height: 100%;
-//   /* width: 90%; */
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// export const HeadSectionBackgroundItemsTypographyStyles = styled.div`
-//   min-width: 30vw;
-//   /* transform: translateY(33%); */
-// `;
-
-// export const HeadSectionBackgroundItemsImageContainerStyles = styled.div`
-//   position: relative;
-//   /* transform: translateY(-100px); */
-//   height: 1500px !important;
-//   /* width: 1700px !important; */
-//   width: 60.5vw !important;
-// `;
-
-// export const HeadSectionBackgroundItemsImageImageStyles = styled.img`
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   padding: 0;
-//   margin-block: 0;
-//   width: 60.5vw !important;
-//   height: 100%;
-//   animation: aboutImg 30s infinite linear;
-//   animation-fill-mode: none;
-
-//   @keyframes aboutImg {
-//     0% {
-//       transform: translateY(0px);
-//       opacity: 1;
-//     }
-//     20% {
-//       transform: translateY(-30px);
-//       opacity: 0.7;
-//     }
-//     60% {
-//       transform: translateY(0px);
-//       opacity: 1;
-//     }
-//     80% {
-//       transform: translateY(30px);
-//       opacity: 0.7;
-//     }
-//     100% {
-//       transform: translateY(0px);
-//       opacity: 1;
-//     }
-//   }
-// `;
