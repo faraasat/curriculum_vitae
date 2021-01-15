@@ -1,54 +1,77 @@
 import styled from "styled-components";
 import CustomButton from "../../components/custom-button/custom-button.component";
+import Bg from "../../assets/bg-2.svg";
 
-export const HeadSectionParticleAlignmentStyles = styled.section`
-  box-sizing: border-box;
+export const HeadSectionAlignmentStyles = styled.section`
   position: relative;
-  width: 110vw;
-  min-height: auto !important;
-  z-index: -10;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  height: 800px;
+  justify-content: center;
 
-  & > * {
-    height: 920px;
+  @media only screen and (max-width: 1295px) {
+    height: 600px;
+  }
+
+  @media only screen and (max-width: 1060px) {
+    height: 450px;
+  }
+
+  @media only screen and (max-width: 770px) {
+    height: 400px;
   }
 `;
 
-export const HeadSectionBackgroundStyles = styled.section`
+export const HeadSectionBackgroundTopStyles = styled.div`
+  user-select: none;
   position: absolute;
   top: 0;
-  margin: 40px 0px 0px 40px;
-  z-index: 1;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -5;
 `;
 
-export const HeadSectionBackgroundContainerStyles = styled.div`
-  height: 830px;
-  margin-bottom: 60px;
-  min-width: 87vw;
-  background-color: rgba(255, 255, 255, 0.603);
+export const HeadSectionBackgroundImageStyles = styled.div`
+  background-image: url(${Bg});
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100% !important;
+  opacity: 0.5;
 `;
 
-export const HeadSectionBackgroundItemsStyles = styled.div`
+export const HeadSectionContentAlignmentStyles = styled.div`
+  position: relative;
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 `;
 
-export const HeadSectionBackgroundItemsTypographyStyles = styled.div`
-  min-width: 40%;
-  transform: translateX(140px);
+export const HeadSectionTypoStyles = styled.div`
+  position: relative;
+  width: 35vw;
+  transform: translateX(4vw);
+  z-index: 10;
+
+  @media only screen and (max-width: 700px) {
+    width: 100vw;
+    transform: translateX(-4vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographyImageStyles = styled.img`
-  position: absolute;
-  z-index: -5;
-  width: 1000px;
-  transform: translate(-20px, -270px);
-  opacity: 0.65;
-`;
-
-export const HeadSectionBackgroundItemsTypographyFirstStyles = styled.div`
+export const HeadSectionTypoFirstStyles = styled.div`
   color: #00c020;
   font-size: 25px;
   font-weight: bolder;
@@ -67,37 +90,85 @@ export const HeadSectionBackgroundItemsTypographyFirstStyles = styled.div`
     transform: translate(-25px, -2.5px);
     z-index: -1;
   }
+
+  @media only screen and (max-width: 1295px) {
+    font-size: 1.565vw;
+
+    &:after {
+      width: 150px;
+      height: 40px;
+      transform: translate(-25px, -8px);
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 4.01vw;
+
+    &:after {
+      width: 150px;
+      height: 40px;
+      transform: translate(-25px, -3.2px);
+    }
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographyFirstSubStyles = styled.span`
+export const HeadSectionTypoFirstSubStyles = styled.span`
   color: #ffffff !important;
   font-size: 26px;
+
+  @media only screen and (max-width: 1295px) {
+    font-size: 1.75vw;
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 4.19vw;
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographySecondStyles = styled.div`
+export const HeadSectionTypoSecondStyles = styled.div`
   margin-top: 13px;
   font-family: "Polya", cursive;
   color: #00b7ff !important;
   font-size: 3.65vw;
   font-weight: 400;
+
+  @media only screen and (max-width: 1295px) {
+    font-size: 3.3vw;
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 5.5vw;
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographyTypedStyles = styled.h1`
+export const HeadSectionTypoTypedStyles = styled.h1`
   border-left: 9px solid #129ddd;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 2px;
   font-size: 25px;
   padding-left: 15px;
   color: #ff00b3;
+
+  @media only screen and (max-width: 1295px) {
+    font-size: 1.7vw;
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 3vw;
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographyBtnGroupStyles = styled.div`
+export const HeadSectionTypoBtnGroupStyles = styled.div`
   margin-top: 40px;
+
+  @media only screen and (max-width: 1295px) {
+    margin-top: 30px;
+
+    display: flex;
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographyBtn1Styles = styled(
-  CustomButton
-)`
+export const HeadSectionTypoBtn1Styles = styled(CustomButton)`
   background: rgb(255, 174, 0) !important;
   font-size: 20px !important;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -106,11 +177,97 @@ export const HeadSectionBackgroundItemsTypographyBtn1Styles = styled(
     background: rgb(0, 195, 255) !important;
     box-shadow: 0px 1px 20px 5px rgba(255, 174, 0, 0.3) !important;
   }
+
+  @media only screen and (max-width: 1295px) {
+    font-size: 1.6vw !important;
+    min-width: 180px !important;
+    height: 50px !important;
+    margin-right: 10px;
+
+    & > * {
+      transform: translateY(-8px);
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 2.5vw !important;
+      height: 2.5vw !important;
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-10%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    font-size: 1.4vw !important;
+    min-width: 155px !important;
+    height: 40px !important;
+    margin-right: 10px;
+
+    & > * {
+      transform: translateY(-12px);
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 2vw !important;
+      height: 2vw !important;
+      transform: translateY(-4px);
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-20%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    font-size: 1.4vw !important;
+    min-width: 130px !important;
+    height: 35px !important;
+    margin-right: 10px;
+
+    & > * {
+      transform: translateY(-15px);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-25%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 2.3vw !important;
+    min-width: 180px !important;
+    height: 43px !important;
+    margin-right: 16px;
+    margin-left: 30px;
+
+    & > * {
+      transform: translateY(-12px);
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 3vw !important;
+      height: 3vw !important;
+      transform: translateY(-4px);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-18%) !important;
+    }
+  }
 `;
 
-export const HeadSectionBackgroundItemsTypographyBtn2Styles = styled(
-  CustomButton
-)`
+export const HeadSectionTypoBtn2Styles = styled(CustomButton)`
   background: rgb(0, 195, 255) !important;
   font-size: 20px !important;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -119,20 +276,115 @@ export const HeadSectionBackgroundItemsTypographyBtn2Styles = styled(
     background: rgb(255, 174, 0) !important;
     box-shadow: 0px 1px 20px 5px rgba(0, 195, 255, 0.3) !important;
   }
+
+  @media only screen and (max-width: 1295px) {
+    font-size: 1.6vw !important;
+    min-width: 180px !important;
+    height: 50px !important;
+    margin-right: 0px;
+
+    & > * {
+      transform: translateY(-8px) !important;
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 2.5vw !important;
+      height: 2.5vw !important;
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    font-size: 1.4vw !important;
+    min-width: 155px !important;
+    height: 40px !important;
+    margin-right: 10px;
+
+    & > * {
+      transform: translateY(-12px) !important;
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 2vw !important;
+      height: 2vw !important;
+      transform: translateY(-4px);
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-20%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    font-size: 1.4vw !important;
+    min-width: 130px !important;
+    height: 35px !important;
+
+    & > * {
+      transform: translateY(-15px) !important;
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-25%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 2.3vw !important;
+    min-width: 180px !important;
+    height: 43px !important;
+    margin-right: 0px;
+    margin-left: 0px;
+
+    & > * {
+      transform: translateY(-12px) !important;
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 3vw !important;
+      height: 3vw !important;
+      transform: translateY(-4px);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-18%) !important;
+    }
+  }
 `;
 
-export const HeadSectionBackgroundItemsImageContainerStyles = styled.div`
+export const HeadSectionImgStyles = styled.div`
   position: relative;
-  top: 0px;
-  transform: translateX(50px);
+  height: 700px;
+  width: 56%;
+
+  @media only screen and (max-width: 960px) {
+    transform: translateX(5vw);
+  }
+
+  @media only screen and (max-width: 700px) {
+    display: none !important;
+  }
 `;
 
-export const HeadSectionBackgroundItemsImageImageStyles = styled.img`
-  transform: translateY(-45px);
-  height: 900px !important;
-  width: 850px !important;
+export const HeadSectionImageImgStyles = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   padding: 0;
   margin-block: 0;
+  width: 100% !important;
+  height: 100%;
   animation: aboutImg 30s infinite linear;
   animation-fill-mode: none;
 
@@ -159,3 +411,99 @@ export const HeadSectionBackgroundItemsImageImageStyles = styled.img`
     }
   }
 `;
+
+// export const HeadSectionAlignmentStyles = styled.section`
+//   box-sizing: border-box;
+//   position: relative;
+//   width: 100%;
+//   min-height: auto !important;
+//   z-index: 5;
+//   background-color: rgba(255, 255, 255, 0.603);
+// `;
+
+// export const HeadSectionBackgroundTopStyles = styled.div`
+//   user-select: none;
+//   position: absolute;
+//   top: 0;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   z-index: -5;
+// `;
+
+// export const HeadSectionBackgroundImageStyles = styled.div`
+//   background-image: url(${Bg});
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   height: 100% !important;
+//   opacity: 0.5;
+// `;
+
+// export const HeadSectionBackgroundItemsStyles = styled.div`
+//   z-index: 1;
+//   height: 720px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// `;
+
+// export const HeadSectionBackgroundItemsContainerStyles = styled.div`
+//   height: 100%;
+//   /* width: 90%; */
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// `;
+
+// export const HeadSectionBackgroundItemsTypographyStyles = styled.div`
+//   min-width: 30vw;
+//   /* transform: translateY(33%); */
+// `;
+
+// export const HeadSectionBackgroundItemsImageContainerStyles = styled.div`
+//   position: relative;
+//   /* transform: translateY(-100px); */
+//   height: 1500px !important;
+//   /* width: 1700px !important; */
+//   width: 60.5vw !important;
+// `;
+
+// export const HeadSectionBackgroundItemsImageImageStyles = styled.img`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   padding: 0;
+//   margin-block: 0;
+//   width: 60.5vw !important;
+//   height: 100%;
+//   animation: aboutImg 30s infinite linear;
+//   animation-fill-mode: none;
+
+//   @keyframes aboutImg {
+//     0% {
+//       transform: translateY(0px);
+//       opacity: 1;
+//     }
+//     20% {
+//       transform: translateY(-30px);
+//       opacity: 0.7;
+//     }
+//     60% {
+//       transform: translateY(0px);
+//       opacity: 1;
+//     }
+//     80% {
+//       transform: translateY(30px);
+//       opacity: 0.7;
+//     }
+//     100% {
+//       transform: translateY(0px);
+//       opacity: 1;
+//     }
+//   }
+// `;

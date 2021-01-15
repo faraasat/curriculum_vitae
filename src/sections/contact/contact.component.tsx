@@ -19,7 +19,7 @@ export default function AboutSection() {
         <ContactSectionImgStyles />
       </ContactSectionImgBackgroundStyles>
       <ContactSectionTypoContainerStyles>
-        <ContactSectionHeadingStyles>
+        <ContactSectionHeadingStyles id="contact-section-scroll">
           <TypographyStyleTextPattern
             text={[
               { 1: "C", 2: "o", 3: "n", 4: "t" },
@@ -30,7 +30,7 @@ export default function AboutSection() {
           <b>📲</b>
         </ContactSectionHeadingStyles>
       </ContactSectionTypoContainerStyles>
-      <ContactSectionBackgroundStyles id="contact-section-scroll">
+      <ContactSectionBackgroundStyles>
         <ContactSectionContactFormStyles>
           <ContactFormComponent />
         </ContactSectionContactFormStyles>

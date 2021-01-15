@@ -11,6 +11,22 @@ export const AboutSectionAlignmentStyles = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1200px) {
+    height: 870px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    height: 1200px;
+  }
+
+  @media only screen and (max-width: 590px) {
+    height: 1200px;
+  }
+
+  @media only screen and (max-width: 510px) {
+    height: 1200px;
+  }
 `;
 
 export const AboutSectionHeadingTypographyStyles = styled.div`
@@ -53,17 +69,60 @@ export const AboutSectionHeadingTypographyStyles = styled.div`
     padding-left: 15px;
     font-size: 75px;
   }
+
+  @media only screen and (max-width: 760px) {
+    & #about-section-scroll span div {
+      font-size: 60px !important;
+      margin-top: 40px;
+    }
+
+    & b {
+      cursor: pointer;
+      padding-left: 15px;
+      font-size: 45px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    & #about-section-scroll span div {
+      margin-top: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 510px) {
+    & #about-section-scroll span div {
+      font-size: 45px !important;
+      margin-top: 35px;
+    }
+
+    & b {
+      cursor: pointer;
+      padding-left: 15px;
+      font-size: 32px;
+    }
+  }
 `;
 
 export const AboutSectionContentContainerStyles = styled.div`
   width: 80%;
   margin-bottom: 60px;
+
+  @media only screen and (max-width: 1350px) {
+    width: 90%;
+  }
 `;
 
 export const AboutSectionContentContentStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const AboutSectionContentImgStyles = styled.div<IPanel>`
@@ -82,6 +141,18 @@ export const AboutSectionContentImgStyles = styled.div<IPanel>`
       ${(props) => (props.panel === false ? "#ff517e" : "#00c8da")};
     z-index: -1;
   }
+
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 590px) {
+    margin-left: 25px;
+    height: 88% !important;
+    width: 95% !important;
+  }
 `;
 
 export const AboutSectionContentImgWrapperStyles = styled.div`
@@ -89,6 +160,13 @@ export const AboutSectionContentImgWrapperStyles = styled.div`
     width: 90%;
     height: 480px;
     position: relative;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 70vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -116,6 +194,12 @@ export const AboutSectionContentImgInfoStyles = styled.div<IPanel>`
   &:active {
     transform: translateX(-5px) scale(0.99);
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  @media only screen and (max-width: 590px) {
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 40px !important;
   }
 `;
 
@@ -190,6 +274,30 @@ export const AboutSectionContentDetailsStyles = styled.div<IPanel>`
   display: ${(props) => (props.panel === false ? "none" : "")};
   visibility: ${(props) => (props.panel === false ? "hidden" : "visible")};
   opacity: ${(props) => (props.panel === false ? 0 : 1)};
+
+  @media only screen and (max-width: 1000px) {
+    left: 3.5212vw !important;
+  }
+
+  @media only screen and (max-width: 720px) {
+    padding: 10px 25px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    left: 20px !important;
+    padding: 10px 15px;
+  }
+
+  @media only screen and (max-width: 590px) {
+    width: 89%;
+    left: 4.166vw !important;
+    padding: 10px 30px;
+    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: 555px) {
+    width: 88.5% !important;
+  }
 `;
 
 export const AboutSectionContentDetailsPersonalStyles = styled.div`
@@ -229,6 +337,16 @@ export const AboutSectionContentDetailsPersonalStyles = styled.div`
   & span p {
     color: white;
   }
+
+  @media only screen and (max-width: 590px) {
+    & span h2 { 
+      font-size: 18px !important;
+    }
+
+    & span p {
+      font-size: 12.5px !important;
+  }
+  }
 `;
 
 export const AboutSectionContentIconsLinkStyles = styled.a`
@@ -265,21 +383,73 @@ export const AboutSectionContentContactTextStyles = styled.div`
   & h2 {
     color: #0ae666;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 18px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      margin-top: 45px;
+    }
   }
 
-  & p {
-    text-align: justify;
-    margin-top: 10px;
+  & li {
+    list-style: none;
+    margin: 7px 0px;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 15px !important;
+    }
+  }
+
+  & li:nth-child(1) {
+    &::before {
+      content: "🚀 ";
+    }
+  }
+
+  & li:nth-child(3) {
+    &::before {
+      content: "👨‍🎓 ";
+    }
+  }
+
+  & li:nth-child(5) {
+    &::before {
+      content: "🔭 ";
+    }
+  }
+
+  & li:nth-child(7) {
+    &::before {
+      content: "🔥 ";
+    }
+  }
+
+  & li:nth-child(9) {
+    &::before {
+      content: "📧 ";
+    }
+  }
+
+  & li:nth-child(11) {
+    &::before {
+      content: "⚡ ";
+    }
   }
 `;
 
 export const AboutSectionContentContactTextNameStyles = styled.h3`
   color: #0a6cff;
   margin-block: 0em;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 20px !important;
+  }
 `;
 
 export const AboutSectionContentContactTextTextStyles = styled.p`
@@ -288,10 +458,14 @@ export const AboutSectionContentContactTextTextStyles = styled.p`
   margin-top: 2px !important;
   font-size: 18px;
   font-family: serif;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 16px !important;
+  }
 `;
 
 export const AboutSectionContentContactTextBtnGroupStyles = styled.div`
-  margin-top: 30px;
+  margin-top: 20px;
 `;
 
 export const AboutSectionContentContactTextBtn1Styles = styled(CustomButton)`
@@ -300,6 +474,49 @@ export const AboutSectionContentContactTextBtn1Styles = styled(CustomButton)`
 
   &:hover {
     box-shadow: 0px 1px 20px 5px rgba(0, 195, 255, 0.3) !important;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 1.5vw !important;
+    min-width: 160px !important;
+    height: 50px !important;
+    margin-right: 16px;
+
+    & > * {
+      transform: translateY(-8px) !important;
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 2.2vw !important;
+      height: 2.2vw !important;
+    }
+
+    &:hover > .custom-txt2-access {
+      top: -3% !important;
+      transform: translateY(-8px) !important;
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2vw !important;
+    min-width: 160px !important;
+    height: 50px !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 2.8vw !important;
+      height: 2.8vw !important;
+      transform: translateY(-4px);
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
   }
 `;
 
@@ -311,5 +528,47 @@ export const AboutSectionContentContactTextBtn2Styles = styled(CustomButton)`
   &:hover {
     background: rgb(255, 174, 0) !important;
     box-shadow: 0px 1px 20px 5px rgba(0, 195, 255, 0.3) !important;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 1.5vw !important;
+    min-width: 160px !important;
+    height: 50px !important;
+    margin-right: 0px;
+
+    & > * {
+      transform: translateY(-8px) !important;
+    }
+
+    & .cv-custom-button-icon-access > * {
+      width: 2.2vw !important;
+      height: 2.2vw !important;
+    }
+
+    &:hover > .custom-txt2-access {
+      top: -3% !important;
+      transform: translateY(-8px) !important;
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2vw !important;
+    min-width: 160px !important;
+    height: 50px !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 2.8vw !important;
+      height: 2.8vw !important;
+      transform: translateY(-4px);
+    }
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-200%) !important;
+      top: -10px !important;
+    }
   }
 `;

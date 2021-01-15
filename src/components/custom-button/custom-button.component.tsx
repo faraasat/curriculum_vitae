@@ -18,11 +18,11 @@ const CustomButton: React.FC<ICustomButton> = ({
     <CvCustomButtonComponentStyles className={className} onClick={onClick}>
       <CvCustomButtonTxt1ComponentStyles>
         {txt1}&nbsp;
-        <CvCustomButtonIconComponentStyles>
+        <CvCustomButtonIconComponentStyles className="cv-custom-button-icon-access">
           <Icon component={Ico} />
         </CvCustomButtonIconComponentStyles>
       </CvCustomButtonTxt1ComponentStyles>
-      <CvCustomButtonTxt2ComponentStyles>
+      <CvCustomButtonTxt2ComponentStyles className='cv-txt2-access'>
         {txt2}
       </CvCustomButtonTxt2ComponentStyles>
     </CvCustomButtonComponentStyles>

@@ -4,7 +4,7 @@ export const CvHeaderStyles = styled.section`
   box-shadow: 2px 0px 7px rgba(1, 1, 1, 0.5);
   box-sizing: border-box;
   height: 100%;
-  z-index: 10;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   align-items: center;

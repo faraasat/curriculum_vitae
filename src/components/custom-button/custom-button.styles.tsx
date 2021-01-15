@@ -30,6 +30,7 @@ export const CvCustomButtonTxt2ComponentStyles = styled.span`
 
 export const CvCustomButtonIconComponentStyles = styled.span`
   transform: translate(0px, 9px) !important;
+  color: #fff !important;
 
   & > * {
     width: 30px !important;

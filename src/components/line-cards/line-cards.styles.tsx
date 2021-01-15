@@ -5,6 +5,16 @@ export const LineCardItemsLeftStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1150px) {
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 760px) {
+    flex-direction: column;
+    margin: 25px 0px;
+    transform: translateX(-15px);
+  }
 `;
 
 export const LineCardItemsLeftRoundYearStyles = styled.div`
@@ -124,6 +134,41 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
       margin-block: 0em;
     }
   }
+
+  @media only screen and (max-width: 1150px) {
+    & h1 {
+      transform: translate(-13px, 0px) !important;
+
+      &:before {
+        display: none;
+      }
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    & h1 {
+      transform: translate(-100%, -33px) !important;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        border-right: 13px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid ${(props) => props.color};
+        border-left: 13px solid transparent;
+        top: 135px;
+        transform: translate(0px, 0px);
+      }
+    }
+    &:after {
+      display: none;
+    }
+  }
 `;
 
 export const LineCardItemsLeftBoxStyles = styled.div`
@@ -143,6 +188,15 @@ export const LineCardItemsLeftBoxStyles = styled.div`
   &:hover {
     transform: translate(210px, -25px);
   }
+
+  @media only screen and (max-width: 1150px) {
+    transform: translate(13px, 0px);
+    padding: 20px 30px 20px 30px;
+
+    &:hover {
+      transform: translate(13px, 0px);
+    }
+  }
 `;
 
 export const LineCardItemsLeftBoxTagStyles = styled.div`
@@ -155,6 +209,11 @@ export const LineCardItemsLeftBoxTagStyles = styled.div`
   position: absolute;
   width: 75%;
   top: -18px;
+
+  @media only screen and (max-width: 1150px) {
+    left: -5%;
+    width: 110%;
+  }
 `;
 
 export const LineCardItemsLeftBoxTagBoxStyles = styled.div`
@@ -171,6 +230,12 @@ export const LineCardItemsLeftBoxTagBoxStyles = styled.div`
     border-top: 11px solid #ffbf0b00;
     border-bottom: 11px solid #f70d0d00;
     top: 11px;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    &:before {
+      display: none;
+    }
   }
 `;
 
@@ -191,6 +256,7 @@ export const LineCardItemsLeftBoxTagLeftTitleStyles = styled.div`
     font-weight: bold;
   }
 `;
+
 export const LineCardItemsLeftBoxTagRightTitleStyles = styled.div`
   width: 75%;
 
@@ -232,6 +298,16 @@ export const LineCardItemsRightStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1150px) {
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 760px) {
+    flex-direction: column-reverse;
+    margin: 25px 0px;
+    transform: translateX(5.8px);
+  }
 `;
 
 export const LineCardItemsRightRoundYearStyles = styled.div`
@@ -279,7 +355,6 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
   }
 
   & h1:before {
-    border-color: ${(props) => props.color};
     content: "";
     width: 20px;
     height: 20px;
@@ -287,7 +362,7 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
     position: absolute;
     transform: translateX(-105.5px);
     border-radius: 50%;
-    border: 2px solid #f6483a;
+    border: 2px solid ${(props) => props.color};
     z-index: 10;
   }
 
@@ -350,6 +425,41 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
   & h1 br {
     margin-block: 0em;
   }
+
+  @media only screen and (max-width: 1150px) {
+    & h1 {
+      transform: translate(13px, 0px) !important;
+
+      &:before {
+        display: none;
+      }
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    & h1 {
+      transform: translate(100%, -33px) !important;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        border-right: 13px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid ${(props) => props.color};
+        border-left: 13px solid transparent;
+        top: 135px;
+        transform: translate(0px, 0px);
+      }
+    }
+    &:after {
+      display: none;
+    }
+  }
 `;
 
 export const LineCardItemsRightBoxStyles = styled.div`
@@ -369,6 +479,15 @@ export const LineCardItemsRightBoxStyles = styled.div`
   &:hover {
     transform: translate(-210px, -25px);
   }
+
+  @media only screen and (max-width: 1150px) {
+    transform: translate(-13px, 0px);
+    padding: 20px 30px 20px 30px;
+
+    &:hover {
+      transform: translate(-13px, 0px);
+    }
+  }
 `;
 
 export const LineCardItemsRightBoxTagStyles = styled.div`
@@ -381,6 +500,11 @@ export const LineCardItemsRightBoxTagStyles = styled.div`
   position: absolute;
   width: 75%;
   top: -18px;
+
+  @media only screen and (max-width: 1150px) {
+    left: -5%;
+    width: 110%;
+  }
 `;
 
 export const LineCardItemsRightBoxTagBoxStyles = styled.div`
@@ -397,6 +521,12 @@ export const LineCardItemsRightBoxTagBoxStyles = styled.div`
     border-top: 11px solid #ffbf0b00;
     border-bottom: 10px solid #f70d0d00;
     top: 11px;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    &:before {
+      display: none;
+    }
   }
 `;
 

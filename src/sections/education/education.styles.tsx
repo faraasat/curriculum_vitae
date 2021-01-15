@@ -33,7 +33,7 @@ export const EducationSectionBackgroundImageStyles = styled.div`
 
 export const EducationSectionContainerBackgroundStyles = styled.div`
   z-index: 3;
-  width: 93vw;
+  width: 100%;
   background-image: linear-gradient(
     150deg,
     rgba(255, 238, 1, 0.6),
@@ -97,6 +97,39 @@ export const EducationSectionHeadingStyles = styled.div`
       transform: scale3d(1, 1, 1);
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    & * {
+      font-size: 10vw !important;
+    }
+
+    & b {
+      font-size: 27px;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    & * {
+      font-size: 10vw !important;
+    }
+
+    & b {
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 510px) {
+    & * {
+      font-size: 10vw !important;
+      margin-top: 35px;
+    }
+
+    & b {
+      padding-left: 5px;
+      padding-right: 2px;
+      font-size: 30px;
+    }
+  }
 `;
 
 export const EducationSectionContentStyles = styled.div`
@@ -114,7 +147,7 @@ export const EducationSectionContentStyles = styled.div`
 export const EducationSectionContentLineStyles = styled.div`
   position: absolute;
   width: 4px !important;
-  z-index: -1;
+  z-index: 0;
   height: 1408px !important;
   transform: translateY(7%);
   background: radial-gradient(
@@ -137,11 +170,6 @@ export const EducationSectionContentLineStyles = styled.div`
   cursor: pointer;
 
   &:hover {
-    position: absolute;
-    width: 4px !important;
-    z-index: 5;
-    height: 1408px !important;
-    transform: translateY(7%);
     background: radial-gradient(
       circle,
       #593170,
@@ -158,5 +186,9 @@ export const EducationSectionContentLineStyles = styled.div`
       #f0ff6e,
       #a3ff6e
     ) !important;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    display: none;
   }
 `;
