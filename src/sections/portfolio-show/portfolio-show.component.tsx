@@ -14,14 +14,15 @@ import Copy from "../../assets/copy.png";
 import Natours from "../../assets/natours.png";
 import AppsIcon from "@material-ui/icons/Apps";
 import Flip from "react-reveal/Flip";
+import Roll from "react-reveal/Roll";
 
 const PortfolioShowComponent = () => {
   return (
     <PortfolioShowAlignmentStyles>
       <PortfolioShowImgAlignmentStyles>
-        <PortfolioShowImgStyles id="portfolio-section-scroll" />
+        <PortfolioShowImgStyles />
       </PortfolioShowImgAlignmentStyles>
-      <PortfolioShowTypoStyles>
+      <PortfolioShowTypoStyles id="portfolio-section-scroll">
         <TypographyStyleTextPattern
           text={[
             { 1: "P", 2: "r", 3: "o", 4: "j" },
@@ -31,7 +32,7 @@ const PortfolioShowComponent = () => {
         <b>🎨</b>
       </PortfolioShowTypoStyles>
       <PortfolioShowContainerStyles>
-        <Flip left>
+        <Roll left>
           <HoverScrollComponent
             heading={"Covid App"}
             para={
@@ -40,8 +41,8 @@ const PortfolioShowComponent = () => {
             Img={Covid}
             url={"https://github.com/faraasat/covid-tracker-app"}
           />
-        </Flip>
-        <Flip top>
+        </Roll>
+        <Roll top>
           <HoverScrollComponent
             heading={"Cortex Clone"}
             para={
@@ -50,8 +51,8 @@ const PortfolioShowComponent = () => {
             Img={Copy}
             url={"https://github.com/faraasat/tiny-small-animation"}
           />
-        </Flip>
-        <Flip right>
+        </Roll>
+        <Roll right>
           <HoverScrollComponent
             heading={"Natours"}
             para={
@@ -60,7 +61,7 @@ const PortfolioShowComponent = () => {
             Img={Natours}
             url={"https://github.com/faraasat/tour-css"}
           />
-        </Flip>
+        </Roll>
       </PortfolioShowContainerStyles>
       <PortfolioShowBtnContainer>
         <Flip bottom>

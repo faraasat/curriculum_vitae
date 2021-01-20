@@ -25,7 +25,7 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
     height: 10px;
     position: absolute;
     border-radius: 50%;
-    z-index: 20;
+    z-index: 21;
     transform: translate(282.9px, -77.1px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -36,7 +36,7 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
   }
 
   &:hover:after {
-    filter: brightness(50%);
+    filter: brightness(70%);
   }
 
   & h1 {
@@ -60,46 +60,6 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
     transition: all 0.3s;
     cursor: pointer;
 
-    &:hover {
-      border: 10px solid transparent !important;
-      width: 125px !important;
-      height: 125px !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      background: linear-gradient(
-        150deg,
-        #a3ff6e,
-        #f0ff6e,
-        #ffd86e,
-        #ffa36e,
-        #b7f8db,
-        #50a7c2,
-        #00aeff,
-        #f184ff,
-        #ff70e7,
-        #ff9ebb,
-        #9effdf,
-        #9effab
-      ) !important;
-      border-radius: 100px !important;
-
-      & span {
-        background: rgba(255, 255, 255, 0.8);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        width: 125px;
-        height: 125px;
-        border-radius: 100px;
-      }
-
-      &:after {
-        border-left-color: lightblue !important;
-      }
-    }
-
     &:before {
       border-color: ${(props) => props.color};
       content: "";
@@ -122,17 +82,53 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
       border-left: 15px solid ${(props) => props.color};
       position: absolute;
       top: 100px;
-      transform: translate(87px, -50px);
+      transform: translate(86.5px, -50px);
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
     }
+  }
 
-    & br {
-      margin-block: 0em;
-    }
+  & h1:hover {
+    border: 10px solid transparent !important;
+    width: 125px !important;
+    height: 125px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(
+      150deg,
+      #a3ff6e,
+      #f0ff6e,
+      #ffd86e,
+      #ffa36e,
+      #b7f8db,
+      #50a7c2,
+      #00aeff,
+      #f184ff,
+      #ff70e7,
+      #ff9ebb,
+      #9effdf,
+      #9effab
+    ) !important;
+    border-radius: 100px !important;
+  }
+
+  & h1:hover span {
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+  }
+
+  & h1:hover:after {
+    border-left-color: lightblue !important;
   }
 
   @media only screen and (max-width: 1150px) {
@@ -319,7 +315,7 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
     position: absolute;
     border-radius: 50%;
     z-index: 20;
-    transform: translate(-147.5px, -77.2px);
+    transform: translate(-148.3px, -77.5px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -374,7 +370,7 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
     border-right: 15px solid ${(props) => props.color};
     position: absolute;
     top: 100px;
-    transform: translate(-86.5px, -50px);
+    transform: translate(-86px, -50px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;

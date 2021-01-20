@@ -18,11 +18,11 @@ export default function AboutSection() {
   return (
     <EducationSectionAlignmentStyles>
       <EducationSectionBackgroundStyles>
-        <EducationSectionBackgroundImageStyles id="education-section-scroll" />
+        <EducationSectionBackgroundImageStyles />
       </EducationSectionBackgroundStyles>
       <EducationSectionContainerBackgroundStyles>
         <EducationSectionContainerStyles>
-          <EducationSectionHeadingStyles>
+          <EducationSectionHeadingStyles id="education-section-scroll">
             <TypographyStyleTextPattern
               text={[
                 { 1: "E", 2: "d", 3: "u", 4: "c" },

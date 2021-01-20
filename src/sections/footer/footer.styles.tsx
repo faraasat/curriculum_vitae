@@ -48,6 +48,13 @@ export const FooterContentIndividualStyles = styled.div`
     width: 21vw;
     padding: 15px 0px;
     background: linear-gradient(240deg, #cdffac, #b5e8ff);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+      background: linear-gradient(240deg, #b5e8ff, #cdffac);
+      transform: scale(1.05);
+    }
   }
 
   @media only screen and (max-width: 1150px) {
@@ -72,8 +79,8 @@ export const FooterContentHeadingStyles = styled.h1`
   -moz-text-fill-color: transparent;
 
   @media only screen and (max-width: 850px) {
-  font-size: 30px;
-  } 
+    font-size: 30px;
+  }
 `;
 
 export const FooterContentParaStyles = styled.p`
@@ -81,10 +88,10 @@ export const FooterContentParaStyles = styled.p`
   font-size: 16px;
 
   @media only screen and (max-width: 920px) {
-  font-size: 13.5px;
+    font-size: 13.5px;
   }
 
   @media only screen and (max-width: 850px) {
-  font-size: 19px;
-  }  
+    font-size: 19px;
+  }
 `;
