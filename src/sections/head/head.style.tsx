@@ -26,7 +26,7 @@ export const HeadSectionAlignmentStyles = styled.section`
     rgba(158, 255, 171, 0.5)
   ) !important; */
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  z-index: -10;
+  z-index: 0;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 
@@ -84,13 +84,14 @@ export const HeadSectionContentAlignmentStyles = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  z-index: 200;
 `;
 
 export const HeadSectionTypoStyles = styled.div`
   position: relative;
   width: 35vw;
   transform: translateX(4vw);
-  z-index: 10;
+  z-index: 200;
 
   @media only screen and (max-width: 700px) {
     width: 100vw;
@@ -159,9 +160,9 @@ export const HeadSectionTypoFirstSubStyles = styled.span`
 export const HeadSectionTypoSecondStyles = styled.div`
   margin-top: 13px;
   font-family: "Polya", cursive;
-  color: #00b7ff !important;
+  color: #9c0101 !important;
   font-size: 3.65vw;
-  font-weight: 400;
+  font-weight: 500;
 
   @media only screen and (max-width: 1295px) {
     font-size: 3.3vw;
@@ -178,7 +179,7 @@ export const HeadSectionTypoTypedStyles = styled.h1`
   margin-top: 2px;
   font-size: 25px;
   padding-left: 15px;
-  color: #ff00b3;
+  color: #fffb00;
 
   @media only screen and (max-width: 1295px) {
     font-size: 1.7vw;

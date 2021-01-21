@@ -6,6 +6,14 @@ export const LineCardItemsLeftStyles = styled.div`
   align-items: center;
   justify-content: center;
 
+  & .react-reveal:nth-child(1)  {
+    z-index: 5;
+  }
+
+  & .react-reveal:nth-child(2)  {
+    z-index: 1;
+  }
+
   @media only screen and (max-width: 1150px) {
     flex-direction: row;
   }

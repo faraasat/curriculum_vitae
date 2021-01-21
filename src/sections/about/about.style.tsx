@@ -118,6 +118,7 @@ export const AboutSectionContentContentStyles = styled.div`
 export const AboutSectionContentImgStyles = styled.div<IPanel>`
   position: relative;
   z-index: 1;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -150,6 +151,14 @@ export const AboutSectionContentImgWrapperStyles = styled.div`
     width: 90%;
     height: 480px;
     position: relative;
+    box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 10px 7px rgba(1, 1, 1, 0.2);
+      transform: scale(1.02);
+    }
   }
 
   @media only screen and (max-width: 1000px) {
@@ -329,13 +338,13 @@ export const AboutSectionContentDetailsPersonalStyles = styled.div`
   }
 
   @media only screen and (max-width: 590px) {
-    & span h2 { 
+    & span h2 {
       font-size: 18px !important;
     }
 
     & span p {
       font-size: 12.5px !important;
-  }
+    }
   }
 `;
 

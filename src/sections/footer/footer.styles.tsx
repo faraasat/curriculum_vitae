@@ -51,7 +51,7 @@ export const FooterContentIndividualStyles = styled.div`
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
       background: linear-gradient(240deg, #b5e8ff, #cdffac);
       transform: scale(1.05);
     }

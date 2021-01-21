@@ -38,7 +38,7 @@ export default function AboutSection() {
           <Jello>
             <HeadSectionTypoFirstStyles>
               <HeadSectionTypoFirstSubStyles>
-                Hello
+                HELLO
               </HeadSectionTypoFirstSubStyles>
               &nbsp;THERE EVERYONE, I AM
             </HeadSectionTypoFirstStyles>

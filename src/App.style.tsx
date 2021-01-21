@@ -9,6 +9,7 @@ export const CvAppHeaderAlignmentStyles = styled.section`
   min-height: 760px;
   height: auto !important;
   height: 100vh;
+  z-index: 500;
 
   @media only screen and (max-width: 590px) {
     display: none;
