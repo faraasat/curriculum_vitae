@@ -27,6 +27,14 @@ export const AboutSectionAlignmentStyles = styled.section`
   @media only screen and (max-width: 510px) {
     height: 1200px;
   }
+
+  @media only screen and (max-width: 430px) {
+    height: 1300px;
+  }
+
+  @media only screen and (max-width: 330px) {
+    height: 1450px;
+  }
 `;
 
 export const AboutSectionHeadingTypographyStyles = styled.div`
@@ -91,6 +99,30 @@ export const AboutSectionHeadingTypographyStyles = styled.div`
       font-size: 60px;
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    & #about-section-scroll span div {
+      font-size: 12vw !important;
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+
+    & b {
+      font-size: 45px;
+    }
+  }
+
+  @media only screen and (max-width: 290px) {
+    & #about-section-scroll span div {
+      font-size: 12vw !important;
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+
+    & b {
+      display: none;
+    }
+  }
 `;
 
 export const AboutSectionContentContainerStyles = styled.div`
@@ -140,10 +172,21 @@ export const AboutSectionContentImgStyles = styled.div<IPanel>`
   }
 
   @media only screen and (max-width: 590px) {
-    margin-left: 25px;
+    margin-left: 20px;
     height: 88% !important;
     width: 95% !important;
   }
+
+@media only screen and (max-width: 300px) {
+  margin-left: 16px;
+  height: 88% !important;
+  width: 90% !important;
+
+  &:after {
+    left: -15px;
+    top: 15px;
+  }
+}
 `;
 
 export const AboutSectionContentImgWrapperStyles = styled.div`
@@ -166,6 +209,17 @@ export const AboutSectionContentImgWrapperStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 85vw !important;
+  }
+
+  @media only screen and (max-width: 300px) {
+    & img {
+      width: 85vw !important;
+      height: 400px !important;
+    }
   }
 `;
 
@@ -200,6 +254,13 @@ export const AboutSectionContentImgInfoStyles = styled.div<IPanel>`
     height: 50px !important;
     line-height: 40px !important;
   }
+
+@media only screen and (max-width: 500px) {
+  transform: translateX(0px);
+  width: 65px !important;
+  height: 65px !important;
+  line-height: 0px !important;
+}
 `;
 
 export const AboutSectionContentImgInfoIconStyles = styled.div`
@@ -216,6 +277,12 @@ export const AboutSectionContentImgInfoIconStyles = styled.div`
     outline: none;
     cursor: pointer;
     z-index: 20;
+  }
+
+  @media only screen and (max-width: 500px) {
+    & button {
+      height: 65px;
+    }
   }
 `;
 
@@ -297,6 +364,16 @@ export const AboutSectionContentDetailsStyles = styled.div<IPanel>`
   @media only screen and (max-width: 555px) {
     width: 88.5% !important;
   }
+
+  @media only screen and (max-width: 500px) {
+    width: 90% !important;
+  }
+
+  @media only screen and (max-width: 300px) {
+    left: 0 !important;
+    width: 100% !important;
+    height: 400px !important;
+  }
 `;
 
 export const AboutSectionContentDetailsPersonalStyles = styled.div`
@@ -346,6 +423,36 @@ export const AboutSectionContentDetailsPersonalStyles = styled.div`
       font-size: 12.5px !important;
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    & span h2 {
+      font-size: 14px !important;
+    }
+
+    & span p {
+      font-size: 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    margin-top: 30px;
+    & h1 {
+      font-size: 23px;
+    }
+
+    & h6 {
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
+
+    & span h2 {
+      font-size: 10px !important;
+    }
+
+    & span p {
+      font-size: 8px !important;
+    }
+  }
 `;
 
 export const AboutSectionContentIconsLinkStyles = styled.a`
@@ -372,12 +479,21 @@ export const AboutSectionContentIconsTextStyles = styled.span`
   & > ${AboutSectionContentIconsLinkStyles} *:hover {
     color: #fff;
   }
+
+  @media only screen and (max-width: 400px) {
+    & > ${AboutSectionContentIconsLinkStyles} * {
+      margin-left: 0.5vw;
+      margin-right: 0.5vw;
+      font-size: 10vw !important;
+    }
+  }
 `;
 
 export const AboutSectionContentContactTextStyles = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 5px;
+  word-wrap: break-word !important;
 
   & h2 {
     color: #0ae666;
@@ -465,6 +581,13 @@ export const AboutSectionContentContactTextTextStyles = styled.p`
 
 export const AboutSectionContentContactTextBtnGroupStyles = styled.div`
   margin-top: 20px;
+
+  @media only screen and (max-width: 390px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const AboutSectionContentContactTextBtn1Styles = styled(CustomButton)`
@@ -515,6 +638,28 @@ export const AboutSectionContentContactTextBtn1Styles = styled(CustomButton)`
     &:hover span:nth-child(1) {
       transform: translateY(-200%) !important;
       top: -10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    margin: 0;
+    width: 80%;
+    font-size: 5vw !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 5vw !important;
+      height: 5vw !important;
+      transform: translateY(-4px);
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    font-size: 5vw !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 6vw !important;
+      height: 6vw !important;
+      transform: translateY(-5px);
     }
   }
 `;
@@ -568,6 +713,29 @@ export const AboutSectionContentContactTextBtn2Styles = styled(CustomButton)`
     &:hover span:nth-child(1) {
       transform: translateY(-200%) !important;
       top: -10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    margin: 0;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 5vw !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 5vw !important;
+      height: 5vw !important;
+      transform: translateY(-4px);
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    font-size: 5vw !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 6vw !important;
+      height: 6vw !important;
+      transform: translateY(-7px);
     }
   }
 `;

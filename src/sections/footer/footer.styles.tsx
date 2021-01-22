@@ -63,11 +63,17 @@ export const FooterContentIndividualStyles = styled.div`
     }
   }
 
-  @media only screen and (max-width: 850px) {
-    .footer-content-alignment {
-      width: 70vw !important;
-    }
+@media only screen and (max-width: 850px) {
+  .footer-content-alignment {
+    width: 70vw !important;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-content-alignment {
+    width: 90vw !important;
+  }
+}
 `;
 
 export const FooterContentHeadingStyles = styled.h1`
@@ -86,6 +92,7 @@ export const FooterContentHeadingStyles = styled.h1`
 export const FooterContentParaStyles = styled.p`
   color: #868686;
   font-size: 16px;
+  word-wrap: break-word;
 
   @media only screen and (max-width: 920px) {
     font-size: 13.5px;

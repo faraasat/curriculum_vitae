@@ -53,6 +53,18 @@ export const HeadSectionAlignmentStyles = styled.section`
   @media only screen and (max-width: 770px) {
     height: 400px;
   }
+
+  @media only screen and (max-width: 400px) {
+    height: 340px;
+  }
+
+  @media only screen and (max-width: 300px) {
+    height: 290px;
+  }
+
+  @media only screen and (max-width: 285px) {
+    height: 350px;
+  }
 `;
 
 export const HeadSectionBackgroundTopStyles = styled.div`
@@ -142,6 +154,26 @@ export const HeadSectionTypoFirstStyles = styled.div`
       transform: translate(-25px, -3.2px);
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 4.01vw;
+
+    &:after {
+      width: 150px;
+      height: 30px;
+      transform: translate(-25px, -3.5px);
+    }
+  }
+
+  @media only screen and (max-width: 285px) {
+    font-size: 4.01vw;
+
+    &:after {
+      width: 120px;
+      height: 25px;
+      transform: translate(-25px, -3.5px);
+    }
+  }
 `;
 
 export const HeadSectionTypoFirstSubStyles = styled.span`
@@ -195,8 +227,13 @@ export const HeadSectionTypoBtnGroupStyles = styled.div`
 
   @media only screen and (max-width: 1295px) {
     margin-top: 30px;
-
     display: flex;
+  }
+
+  @media only screen and (max-width: 285px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 `;
 
@@ -297,6 +334,35 @@ export const HeadSectionTypoBtn1Styles = styled(CustomButton)`
       transform: translateY(-18%) !important;
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 2.3vw !important;
+    min-width: 120px !important;
+
+    & > * {
+      transform: translateY(-10px);
+    }
+
+    & .cv-custom-button-icon-access > * {
+      transform: translateY(-6px);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-18%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 285px) {
+    margin: 0;
+    font-size: 4.5vw !important;
+    min-width: 150px !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 15px !important;
+      height: 15px !important;
+      transform: translateY(-3.5px);
+    }
+  }
 `;
 
 export const HeadSectionTypoBtn2Styles = styled(CustomButton)`
@@ -389,6 +455,36 @@ export const HeadSectionTypoBtn2Styles = styled(CustomButton)`
 
     &:hover span:nth-child(2) {
       transform: translateY(-18%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 2.3vw !important;
+    min-width: 120px !important;
+
+    & > * {
+      transform: translateY(-10px);
+    }
+
+    & .cv-custom-button-icon-access > * {
+      transform: translateY(-6px);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(-18%) !important;
+    }
+  }
+
+  @media only screen and (max-width: 285px) {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 4.5vw !important;
+    min-width: 150px !important;
+
+    & .cv-custom-button-icon-access > * {
+      width: 15px !important;
+      height: 15px !important;
+      transform: translateY(-3.5px);
     }
   }
 `;

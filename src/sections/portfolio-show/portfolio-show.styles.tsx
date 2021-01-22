@@ -85,6 +85,16 @@ export const PortfolioShowTypoStyles = styled.div`
       font-size: 30px;
     }
   }
+
+  @media only screen and (max-width: 290px) {
+    & * {
+      font-size: 12vw !important;
+    }
+
+    & b {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const PortfolioShowContainerStyles = styled.div`
@@ -95,6 +105,10 @@ export const PortfolioShowContainerStyles = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media only screen and (max-width: 400px) {
+    width: 80%;
+  }
 `;
 
 export const PortfolioShowImgAlignmentStyles = styled.div`
@@ -146,6 +160,16 @@ export const PortfolioShowBtnStyles = styled.a`
 
   & span svg {
     transform: translate(2px, 5px);
+  }
+
+  @media only screen and (max-width: 300px) {
+    padding: 15px 25px;
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 300px) {
+    padding: 12px 17px;
+    font-size: 11px;
   }
 `;
 

@@ -105,7 +105,7 @@ export const EducationSectionHeadingStyles = styled.div`
 
     & b {
       font-size: 25px;
-    padding-left: 10px;
+      padding-left: 10px;
     }
   }
 
@@ -115,7 +115,17 @@ export const EducationSectionHeadingStyles = styled.div`
     }
 
     & b {
-    padding-left: 5px;
+      padding-left: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    & * {
+      font-size: 12vw !important;
+    }
+
+    & b {
+      display: none;
     }
   }
 `;

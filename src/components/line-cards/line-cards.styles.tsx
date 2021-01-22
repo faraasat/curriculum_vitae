@@ -6,11 +6,11 @@ export const LineCardItemsLeftStyles = styled.div`
   align-items: center;
   justify-content: center;
 
-  & .react-reveal:nth-child(1)  {
+  & .react-reveal:nth-child(1) {
     z-index: 5;
   }
 
-  & .react-reveal:nth-child(2)  {
+  & .react-reveal:nth-child(2) {
     z-index: 1;
   }
 
@@ -173,6 +173,12 @@ export const LineCardItemsLeftRoundYearStyles = styled.div`
       display: none;
     }
   }
+
+  @media only screen and (max-width: 470px) {
+    & h1 {
+      transform: translate(0%, -33px) !important;
+    }
+  }
 `;
 
 export const LineCardItemsLeftBoxStyles = styled.div`
@@ -201,6 +207,18 @@ export const LineCardItemsLeftBoxStyles = styled.div`
       transform: translate(13px, 0px);
     }
   }
+
+  @media only screen and (max-width: 470px) {
+    transform: translate(15px, 0px);
+    width: 74vw;
+    padding: 15px 25px 15px 25px;
+  }
+
+  @media only screen and (max-width: 260px) {
+    transform: translate(15px, 0px);
+    width: 70vw;
+    padding: 10px 15px 10px 15px;
+  }
 `;
 
 export const LineCardItemsLeftBoxTagStyles = styled.div`
@@ -217,6 +235,11 @@ export const LineCardItemsLeftBoxTagStyles = styled.div`
   @media only screen and (max-width: 1150px) {
     left: -5%;
     width: 110%;
+  }
+
+  @media only screen and (max-width: 470px) {
+    left: -4%;
+    width: 108%;
   }
 `;
 
@@ -259,6 +282,10 @@ export const LineCardItemsLeftBoxTagLeftTitleStyles = styled.div`
     padding: 0;
     font-weight: bold;
   }
+
+  @media only screen and (max-width: 470px) {
+    font-size: 3.5vw;
+  }
 `;
 
 export const LineCardItemsLeftBoxTagRightTitleStyles = styled.div`
@@ -273,6 +300,12 @@ export const LineCardItemsLeftBoxTagRightTitleStyles = styled.div`
     font-size: 18px;
     padding: 10px 0;
   }
+
+  @media only screen and (max-width: 470px) {
+    & h1 {
+      font-size: 3.5vw;
+    }
+  }
 `;
 
 export const LineCardItemsLeftBoxInfoStyles = styled.h3`
@@ -284,6 +317,10 @@ export const LineCardItemsLeftBoxInfoStyles = styled.h3`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: ${(props) => props.color};
+
+  @media only screen and (max-width: 470px) {
+    font-size: 5.5vw;
+  }
 `;
 
 export const LineCardItemsLeftBoxParaStyles = styled.p`
@@ -294,6 +331,10 @@ export const LineCardItemsLeftBoxParaStyles = styled.p`
   color: #777777;
   margin: 0;
   padding: 0;
+
+  @media only screen and (max-width: 470px) {
+    font-size: 3.5vw;
+  }
 `;
 
 //////// RIGHT //////////////////
@@ -464,6 +505,12 @@ export const LineCardItemsRightRoundYearStyles = styled.div`
       display: none;
     }
   }
+
+  @media only screen and (max-width: 470px) {
+    & h1 {
+      transform: translate(0%, -33px) !important;
+    }
+  }
 `;
 
 export const LineCardItemsRightBoxStyles = styled.div`
@@ -492,6 +539,18 @@ export const LineCardItemsRightBoxStyles = styled.div`
       transform: translate(-13px, 0px);
     }
   }
+
+  @media only screen and (max-width: 470px) {
+    transform: translate(-5px, 0px);
+    width: 74vw;
+    padding: 15px 25px 15px 25px;
+  }
+
+  @media only screen and (max-width: 260px) {
+    transform: translate(-5px, 0px);
+    width: 70vw;
+    padding: 10px 15px 10px 15px;
+  }
 `;
 
 export const LineCardItemsRightBoxTagStyles = styled.div`
@@ -508,6 +567,11 @@ export const LineCardItemsRightBoxTagStyles = styled.div`
   @media only screen and (max-width: 1150px) {
     left: -5%;
     width: 110%;
+  }
+
+  @media only screen and (max-width: 470px) {
+    left: -4%;
+    width: 108%;
   }
 `;
 
@@ -550,6 +614,10 @@ export const LineCardItemsRightBoxTagLeftTitleStyles = styled.div`
     padding: 0;
     font-weight: bolder;
   }
+
+  @media only screen and (max-width: 470px) {
+    font-size: 3.5vw;
+  }
 `;
 export const LineCardItemsRightBoxTagRightTitleStyles = styled.div`
   width: 75%;
@@ -563,6 +631,12 @@ export const LineCardItemsRightBoxTagRightTitleStyles = styled.div`
     font-size: 18px;
     padding: 10px 0;
   }
+
+  @media only screen and (max-width: 470px) {
+    & h1 {
+      font-size: 3.5vw;
+    }
+  }
 `;
 
 export const LineCardItemsRightBoxInfoStyles = styled.h3`
@@ -574,6 +648,10 @@ export const LineCardItemsRightBoxInfoStyles = styled.h3`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: ${(props) => props.color};
+
+  @media only screen and (max-width: 470px) {
+    font-size: 5.5vw;
+  }
 `;
 
 export const LineCardItemsRightBoxParaStyles = styled.p`
@@ -584,4 +662,8 @@ export const LineCardItemsRightBoxParaStyles = styled.p`
   color: #777777;
   margin: 0;
   padding: 0;
+
+  @media only screen and (max-width: 470px) {
+    font-size: 3.5vw;
+  }
 `;

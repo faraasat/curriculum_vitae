@@ -71,6 +71,10 @@ export const ContactSectionBackgroundStyles = styled.div`
   @media only screen and (max-width: 520px) {
     margin-top: 500px;
   }
+
+  @media only screen and (max-width: 470px) {
+    margin-top: 580px;
+  }
 `;
 
 export const ContactSectionBackground2Styles = styled.div`
@@ -170,6 +174,16 @@ export const ContactSectionHeadingStyles = styled.div`
 
     & b {
       font-size: 26px;
+    }
+  }
+
+  @media only screen and (max-width: 355px) {
+    & * {
+      font-size: 12vw !important;
+    }
+
+    & b {
+      display: none;
     }
   }
 `;

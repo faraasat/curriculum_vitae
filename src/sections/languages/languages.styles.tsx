@@ -103,7 +103,7 @@ export const LanguageSectionTypoStyles = styled.div`
   }
 
   @media only screen and (max-width: 800px) {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
     & * {
       font-size: 10vw !important;
     }
@@ -120,6 +120,16 @@ export const LanguageSectionTypoStyles = styled.div`
 
     & b {
       font-size: 33px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    & * {
+      font-size: 12vw !important;
+    }
+
+    & b {
+      display: none;
     }
   }
 `;

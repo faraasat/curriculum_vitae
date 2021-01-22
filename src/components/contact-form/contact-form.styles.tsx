@@ -31,6 +31,10 @@ export const ContactFormTypographyTypoStyles = styled.h1`
   margin: 15px 0px;
   color: #3bb4fa;
   cursor: pointer;
+
+  @media only screen and (max-width: 270px) {
+    font-size: 12.5vw;
+  }
 `;
 
 export const ContactFormFormAlignmentStyles = styled.div`
@@ -50,13 +54,13 @@ export const ContactFormLineAlignmentStyles = styled.div`
   width: 100%;
 
   & > :nth-child(1) {
-      margin-right: 9px;
-      width: 44%;
-    }
+    margin-right: 9px;
+    width: 44%;
+  }
 
-    & > :nth-child(2) {
-      width: 44%;
-    }
+  & > :nth-child(2) {
+    width: 44%;
+  }
 
   &:not(:first-child) {
     margin-top: 17px;
@@ -94,9 +98,28 @@ export const ContactFormBtnStyling = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   & button {
     margin: 0;
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+
+  @media only screen and (max-width: 270px) {
+    & button {
+      margin: 0;
+      padding-left: 1vw !important;
+      padding-right: 1vw !important;
+      font-size: 12px;
+      min-width: 160px;
+      height: 50px;
+      line-height: 54px;
+
+      & .cv-custom-button-icon-access {
+        width: 17px !important;
+        height: 17px !important;
+        transform: translateY(-6px) !important;
+      }
+    }
   }
 `;
