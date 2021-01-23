@@ -14,8 +14,16 @@ import {
   Portfolio,
   PortfolioShow,
 } from "./listing";
+import { isMobile } from "react-device-detect";
 
 function App() {
+  if (isMobile) {
+    return (
+      <div>
+        <h1>Not Available on Mobile</h1>
+      </div>
+    );
+  }
   return (
     <div>
       <CvAppHeaderAlignmentStyles>
