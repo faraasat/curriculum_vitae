@@ -63,7 +63,7 @@ export default function AboutSection() {
           <Fade left>
             <AboutSectionContentImgStyles panel={changePanel}>
               <AboutSectionContentImgWrapperStyles>
-                <img src="https://source.unsplash.com/random" alt="about" />
+                <img src="https://picsum.photos/id/669/300/430.jpg" alt="about" />
                 <AboutSectionContentImgInfoStyles panel={changePanel}>
                   <AboutSectionContentImgInfoIconStyles>
                     <button onClick={handlePanelOpen}>
