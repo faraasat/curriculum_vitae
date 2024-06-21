@@ -18,10 +18,10 @@ jobs:
       with:
         version: 14
 
-    - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v2.3.0
-      with:
-        cmd: install
+    # - name: GitHub Action for Yarn
+    #   uses: Borales/actions-yarn@v2.3.0
+    #   with:
+    #     cmd: install
     
     # - name: Cache dependencies
     #   uses: actions/cache@v2
@@ -31,7 +31,14 @@ jobs:
     #     restore-keys: |
     #       ${{ runner.os }}-node-
 
-    - run: npm run build
+    - name: Installing Yarn
+      run: npm install yarn --global
+
+    - name: Yarn Install
+      run: yarn
+    
+    - name: Building Project
+      run: npm run build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
