@@ -8,30 +8,33 @@ jobs:
   deploy: 
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+
+    - name: Build and Deploy React app to GitHub Pages
+      uses: omkartapale/react-deployment-gh-pages@v1.0.0
       
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2.1.2
-      with:
-        version: 12
+    # - name: Setup Node.js environment
+    #   uses: actions/setup-node@v2.1.2
+    #   with:
+    #     version: 12
 
-    - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v2.3.0
-      with:
-        cmd: install
+    # - name: GitHub Action for Yarn
+    #   uses: Borales/actions-yarn@v2.3.0
+    #   with:
+    #     cmd: install
     
-    - name: Cache dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+    # - name: Cache dependencies
+    #   uses: actions/cache@v2
+    #   with:
+    #     path: ~/.npm
+    #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-node-
 
-    - run: npm run build
+    # - run: npm run build
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+    # - name: Deploy
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./build
